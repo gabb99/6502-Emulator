@@ -2,13 +2,23 @@
 // cases per opcode, each specifying the processor state before and after *and*
 // every bus cycle in order.
 //
-//   ./run_harte 6502/v1/a9.json [more.json ...]
+//   ./run_harte                    every opcode in the default suite directory
+//   ./run_harte a9 bd 91           just these opcodes
+//   ./run_harte path/to/a9.json    an explicit file
+//   ./run_harte Harte-65x02/wdc65c02/v1    every opcode in another directory
+//
+// The default directory is $HARTE_DIR if set, otherwise the vendored
+// Harte-65x02/6502/v1, searched from the working directory and its parents so
+// that running from either the project root or build/ works.
 //
 // This is the suite that validates the cycle-level design rather than just the
 // results, because it checks the address and direction of every single cycle.
+#include <algorithm>
 #include <array>
+#include <cctype>
 #include <cstdio>
 #include <cstring>
+#include <filesystem>
 #include <string>
 #include <string_view>
 #include <vector>
@@ -151,6 +161,49 @@ struct FileResult {
     int failed = 0;
 };
 
+namespace fs = std::filesystem;
+
+// $HARTE_DIR wins; otherwise look for the vendored suite from here upwards, so
+// the binary works when run from the project root or from build/.
+fs::path findDefaultDirectory() {
+    if (const char* fromEnv = std::getenv("HARTE_DIR")) {
+        if (fs::is_directory(fromEnv)) return fromEnv;
+        std::fprintf(stderr, "HARTE_DIR=%s is not a directory\n", fromEnv);
+        return {};
+    }
+    static constexpr const char* kCandidates[] = {
+        "Harte-65x02/6502/v1",       "../Harte-65x02/6502/v1",
+        "../../Harte-65x02/6502/v1", "6502/v1",
+        "../6502/v1",
+    };
+    std::error_code ignored;
+    for (const char* candidate : kCandidates) {
+        if (fs::is_directory(candidate, ignored)) return candidate;
+    }
+    return {};
+}
+
+// Every .json in the directory, in name order - which for this suite is
+// opcode order, 00 through ff.
+std::vector<fs::path> jsonFilesIn(const fs::path& directory) {
+    std::vector<fs::path> files;
+    std::error_code       ignored;
+    for (const auto& entry : fs::directory_iterator(directory, ignored)) {
+        if (entry.is_regular_file(ignored) && entry.path().extension() == ".json") {
+            files.push_back(entry.path());
+        }
+    }
+    std::sort(files.begin(), files.end());
+    return files;
+}
+
+bool looksLikeOpcode(std::string_view text) {
+    if (text.empty() || text.size() > 2) return false;
+    return std::all_of(text.begin(), text.end(), [](unsigned char c) {
+        return std::isxdigit(c) != 0;
+    });
+}
+
 FileResult runFile(const char* path, int maxReports) {
     FileResult result;
 
@@ -237,19 +290,63 @@ FileResult runFile(const char* path, int maxReports) {
 }  // namespace
 
 int main(int argc, char** argv) {
-    if (argc < 2) {
-        std::fprintf(stderr, "usage: %s <test.json> [more.json ...]\n", argv[0]);
-        return 2;
-    }
     int maxReports = 3;
     if (const char* env = std::getenv("HARTE_MAX_REPORTS")) maxReports = std::atoi(env);
 
+    const fs::path defaultDirectory = findDefaultDirectory();
+    std::vector<fs::path> files;
+
+    if (argc < 2) {
+        // No arguments: run the whole suite.
+        if (defaultDirectory.empty()) {
+            std::fprintf(stderr,
+                         "no test directory found.\n"
+                         "  run from the project root, or set HARTE_DIR to a directory\n"
+                         "  of per-opcode JSON files (e.g. Harte-65x02/6502/v1).\n\n"
+                         "usage: %s [opcode | file.json | directory ...]\n",
+                         argv[0]);
+            return 2;
+        }
+        files = jsonFilesIn(defaultDirectory);
+        if (files.empty()) {
+            std::fprintf(stderr, "no .json files in %s\n", defaultDirectory.c_str());
+            return 2;
+        }
+        std::printf("running %zu opcode files from %s\n\n", files.size(),
+                    defaultDirectory.c_str());
+    } else {
+        std::error_code ignored;
+        for (int k = 1; k < argc; ++k) {
+            const std::string argument = argv[k];
+            if (fs::is_directory(argument, ignored)) {
+                const auto found = jsonFilesIn(argument);
+                files.insert(files.end(), found.begin(), found.end());
+            } else if (looksLikeOpcode(argument)) {
+                // A bare opcode resolves against the default directory.
+                if (defaultDirectory.empty()) {
+                    std::fprintf(stderr,
+                                 "cannot resolve opcode '%s': no test directory found "
+                                 "(set HARTE_DIR)\n",
+                                 argument.c_str());
+                    return 2;
+                }
+                char name[8];
+                std::snprintf(name, sizeof name, "%02x.json",
+                              static_cast<unsigned>(std::strtoul(argument.c_str(), nullptr, 16)));
+                files.push_back(defaultDirectory / name);
+            } else {
+                files.emplace_back(argument);
+            }
+        }
+    }
+
     FileResult total;
-    for (int k = 1; k < argc; ++k) {
-        const FileResult one = runFile(argv[k], maxReports);
+    for (const auto& file : files) {
+        const FileResult one = runFile(file.c_str(), maxReports);
         total.passed += one.passed;
         total.failed += one.failed;
     }
-    std::printf("\nTOTAL: %d passed, %d failed\n", total.passed, total.failed);
+    std::printf("\n%zu file%s - TOTAL: %d passed, %d failed\n", files.size(),
+                files.size() == 1 ? "" : "s", total.passed, total.failed);
     return total.failed == 0 ? 0 : 1;
 }

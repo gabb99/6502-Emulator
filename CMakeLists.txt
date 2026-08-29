@@ -36,9 +36,8 @@ target_link_libraries(run_klaus PRIVATE mos6502)
 add_executable(benchmark tools/benchmark.cpp)
 target_link_libraries(benchmark PRIVATE mos6502)
 
-# Runs the SingleStepTests / Tom Harte per-cycle suite. The JSON files are
-# fetched on demand by tools/harte.sh rather than vendored - the full set is
-# roughly 840 MB.
+# Runs the SingleStepTests / Tom Harte per-cycle suite against the vendored
+# Harte-65x02 test data. With no arguments it runs all 256 opcode files.
 add_executable(run_harte tools/run_harte.cpp)
 target_link_libraries(run_harte PRIVATE mos6502)
 target_include_directories(run_harte PRIVATE tools)

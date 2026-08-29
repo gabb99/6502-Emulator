@@ -66,7 +66,9 @@ include/mos6502/
   disassembler.hpp        built from the same table
   tracing.hpp             a Hooks policy that logs every instruction
 tools/  run_klaus.cpp, run_harte.cpp, json.hpp, harte.sh, benchmark.cpp
-tests/  test_cpu.cpp, data/
+tests/  test_cpu.cpp
+Harte-65x02/   vendored SingleStepTests per-cycle suite
+Klaus-tests/   vendored Klaus Dormann functional tests
 ```
 
 ## Building
@@ -118,19 +120,25 @@ cycle count is asserted exactly.
 > `PASS - trapped at success address $3469 after 96241374 cycles`
 
 Exercises every documented opcode's logic, including decimal mode, over 96
-million cycles. The image is fetched from
+million cycles. `Klaus-tests/` is a checkout of
 [Klaus2m5/6502_65C02_functional_tests](https://github.com/Klaus2m5/6502_65C02_functional_tests);
-the success address depends on how the image was assembled and the listing
-gives it.
+the success address depends on how the image was assembled and the `.lst`
+listing beside the binary gives it.
 
 ### SingleStepTests / Tom Harte, per cycle
 
 ```bash
-tools/harte.sh          # all 256 opcodes
-tools/harte.sh a9 bd    # or just a few
+./build/run_harte                          # all 256 opcodes - the default
+./build/run_harte a9 bd 06                 # just these
+./build/run_harte Harte-65x02/6502/v1/ea.json    # an explicit file
+./build/run_harte Harte-65x02/wdc65c02/v1        # another variant's directory
 ```
 
-> `ALL PASS - 256 opcodes`
+> `256 files - TOTAL: 2560000 passed, 0 failed`
+
+With no arguments it runs every opcode file in the suite directory: `$HARTE_DIR`
+if set, otherwise the vendored `Harte-65x02/6502/v1`, searched from the working
+directory upwards so it works from the project root or from `build/`.
 
 **2,560,000 cases: 10,000 per opcode, all 256 opcodes, zero failures.** Each
 case pins down every register, every touched memory byte, and the address,
@@ -138,9 +146,17 @@ value and direction of every single bus cycle. This is the suite that validates
 the cycle-level design rather than just the results - it is what caught the
 internal cycles that were being burned without driving the address bus.
 
-The JSON is ~3.3 MB per opcode (~840 MB for the set) and is not vendored;
-`tools/harte.sh` streams it a batch at a time and deletes as it goes, so peak
-disk use stays in the tens of megabytes. `KEEP=1` retains the files.
+`Harte-65x02/` is a checkout of
+[SingleStepTests/65x02](https://github.com/SingleStepTests/65x02), which also
+carries `nes6502`, `rockwell65c02`, `synertek65c02` and `wdc65c02` sets - point
+`run_harte` at one of those directories to test a different variant. Only the
+`6502` set is expected to pass against `Nmos6502`; `nes6502`, for instance,
+models a part with decimal mode disabled.
+
+If the checkout is absent, `tools/harte.sh` fetches the JSON on demand (~3.3 MB
+per opcode, ~840 MB for the set), streaming a batch at a time and deleting as
+it goes so peak disk use stays in the tens of megabytes. `KEEP=1` retains
+them.
 
 ## Known approximations
 
