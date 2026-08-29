@@ -112,7 +112,7 @@ cycle count is asserted exactly.
 ### Klaus Dormann's functional tests
 
 ```bash
-./build/run_klaus tests/data/6502_functional_test.bin 0x0400 0x3469
+./build/run_klaus Klaus-tests/data/6502_functional_test.bin 0x0400 0x3469
 ```
 
 > `PASS - trapped at success address $3469 after 96241374 cycles`

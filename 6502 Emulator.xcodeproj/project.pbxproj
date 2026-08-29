@@ -8,10 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8217A1BC3042F7DC0071608E /* test_cpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1BA3042F7DC0071608E /* test_cpu.cpp */; };
+		8217A1CE3042FDEC0071608E /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1C63042FDEC0071608E /* benchmark.cpp */; };
+		8217A1D830433A7E0071608E /* run_klaus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1D730433A7E0071608E /* run_klaus.cpp */; };
+		8217A1DA30433CBD0071608E /* 6502_functional_test.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A1BD3042F88F0071608E /* 6502_functional_test.bin */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8217A1D930433CA40071608E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Executables;
+			files = (
+				8217A1DA30433CBD0071608E /* 6502_functional_test.bin in CopyFiles */,
+			);
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		000000000000000000000120 /* MyTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000120 /* Functional tests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Functional tests"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8217A1A93042F74D0071608E /* addressing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = addressing.hpp; sourceTree = "<group>"; };
 		8217A1AA3042F74D0071608E /* bus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bus.hpp; sourceTree = "<group>"; };
 		8217A1AB3042F74D0071608E /* cpu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpu.hpp; sourceTree = "<group>"; };
@@ -27,10 +41,25 @@
 		8217A1B53042F74D0071608E /* variants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = variants.hpp; sourceTree = "<group>"; };
 		8217A1BA3042F7DC0071608E /* test_cpu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_cpu.cpp; sourceTree = "<group>"; };
 		8217A1BD3042F88F0071608E /* 6502_functional_test.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = 6502_functional_test.bin; path = "Klaus-tests/bin_files/6502_functional_test.bin"; sourceTree = SOURCE_ROOT; };
+		8217A1C53042FD890071608E /* Benchmarks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Benchmarks; sourceTree = BUILT_PRODUCTS_DIR; };
+		8217A1C63042FDEC0071608E /* benchmark.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = benchmark.cpp; sourceTree = "<group>"; };
+		8217A1C83042FDEC0071608E /* json.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
+		8217A1D6304339F00071608E /* Klaus suite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Klaus suite"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8217A1D730433A7E0071608E /* run_klaus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = run_klaus.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		000000000000000130000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		8217A1C13042FD890071608E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		8217A1D2304339F00071608E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -41,6 +70,7 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
+				8217A1CB3042FDEC0071608E /* tools */,
 				8217A1BB3042F7DC0071608E /* tests */,
 				8217A1B73042F74D0071608E /* include */,
 				000000000000000000000020 /* Products */,
@@ -50,7 +80,9 @@
 		000000000000000000000020 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000120 /* MyTool */,
+				000000000000000000000120 /* Functional tests */,
+				8217A1C53042FD890071608E /* Benchmarks */,
+				8217A1D6304339F00071608E /* Klaus suite */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,26 +119,65 @@
 			isa = PBXGroup;
 			children = (
 				8217A1BD3042F88F0071608E /* 6502_functional_test.bin */,
+				8217A1D730433A7E0071608E /* run_klaus.cpp */,
 				8217A1BA3042F7DC0071608E /* test_cpu.cpp */,
 			);
 			path = tests;
 			sourceTree = "<group>";
 		};
+		8217A1CB3042FDEC0071608E /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				8217A1C63042FDEC0071608E /* benchmark.cpp */,
+				8217A1C83042FDEC0071608E /* json.hpp */,
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		000000000000000100000000 /* MyTool */ = {
+		000000000000000100000000 /* Functional tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 000000000000000110000000 /* Build configuration list for PBXNativeTarget "MyTool" */;
+			buildConfigurationList = 000000000000000110000000 /* Build configuration list for PBXNativeTarget "Functional tests" */;
 			buildPhases = (
 				000000000000000120000000 /* Sources */,
 				000000000000000130000000 /* Frameworks */,
 			);
 			buildRules = (
 			);
-			name = MyTool;
+			name = "Functional tests";
 			productName = Tool;
-			productReference = 000000000000000000000120 /* MyTool */;
+			productReference = 000000000000000000000120 /* Functional tests */;
+			productType = "com.apple.product-type.tool";
+		};
+		8217A1BE3042FD890071608E /* Benchmarks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8217A1C23042FD890071608E /* Build configuration list for PBXNativeTarget "Benchmarks" */;
+			buildPhases = (
+				8217A1BF3042FD890071608E /* Sources */,
+				8217A1C13042FD890071608E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			name = Benchmarks;
+			productName = Tool;
+			productReference = 8217A1C53042FD890071608E /* Benchmarks */;
+			productType = "com.apple.product-type.tool";
+		};
+		8217A1CF304339F00071608E /* Klaus suite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8217A1D3304339F00071608E /* Build configuration list for PBXNativeTarget "Klaus suite" */;
+			buildPhases = (
+				8217A1D0304339F00071608E /* Sources */,
+				8217A1D2304339F00071608E /* Frameworks */,
+				8217A1D930433CA40071608E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			name = "Klaus suite";
+			productName = Tool;
+			productReference = 8217A1D6304339F00071608E /* Klaus suite */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -138,7 +209,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				000000000000000100000000 /* MyTool */,
+				000000000000000100000000 /* Functional tests */,
+				8217A1BE3042FD890071608E /* Benchmarks */,
+				8217A1CF304339F00071608E /* Klaus suite */,
 			);
 		};
 /* End PBXProject section */
@@ -148,6 +221,18 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				8217A1BC3042F7DC0071608E /* test_cpu.cpp in Sources */,
+			);
+		};
+		8217A1BF3042FD890071608E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				8217A1CE3042FDEC0071608E /* benchmark.cpp in Sources */,
+			);
+		};
+		8217A1D0304339F00071608E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				8217A1D830433A7E0071608E /* run_klaus.cpp in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -161,7 +246,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -194,7 +279,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = c23;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -231,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++23";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -264,7 +349,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_C_LANGUAGE_STANDARD = c23;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -285,7 +370,7 @@
 			};
 			name = Release;
 		};
-		000000000000000111000000 /* Debug configuration for PBXNativeTarget "MyTool" */ = {
+		000000000000000111000000 /* Debug configuration for PBXNativeTarget "Functional tests" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,7 +378,39 @@
 			};
 			name = Debug;
 		};
-		000000000000000112000000 /* Release configuration for PBXNativeTarget "MyTool" */ = {
+		000000000000000112000000 /* Release configuration for PBXNativeTarget "Functional tests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = include;
+			};
+			name = Release;
+		};
+		8217A1C33042FD890071608E /* Debug configuration for PBXNativeTarget "Benchmarks" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = include;
+			};
+			name = Debug;
+		};
+		8217A1C43042FD890071608E /* Release configuration for PBXNativeTarget "Benchmarks" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = include;
+			};
+			name = Release;
+		};
+		8217A1D4304339F00071608E /* Debug configuration for PBXNativeTarget "Klaus suite" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = include;
+			};
+			name = Debug;
+		};
+		8217A1D5304339F00071608E /* Release configuration for PBXNativeTarget "Klaus suite" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,11 +429,27 @@
 			);
 			defaultConfigurationName = Release;
 		};
-		000000000000000110000000 /* Build configuration list for PBXNativeTarget "MyTool" */ = {
+		000000000000000110000000 /* Build configuration list for PBXNativeTarget "Functional tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				000000000000000111000000 /* Debug configuration for PBXNativeTarget "MyTool" */,
-				000000000000000112000000 /* Release configuration for PBXNativeTarget "MyTool" */,
+				000000000000000111000000 /* Debug configuration for PBXNativeTarget "Functional tests" */,
+				000000000000000112000000 /* Release configuration for PBXNativeTarget "Functional tests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		8217A1C23042FD890071608E /* Build configuration list for PBXNativeTarget "Benchmarks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8217A1C33042FD890071608E /* Debug configuration for PBXNativeTarget "Benchmarks" */,
+				8217A1C43042FD890071608E /* Release configuration for PBXNativeTarget "Benchmarks" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		8217A1D3304339F00071608E /* Build configuration list for PBXNativeTarget "Klaus suite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8217A1D4304339F00071608E /* Debug configuration for PBXNativeTarget "Klaus suite" */,
+				8217A1D5304339F00071608E /* Release configuration for PBXNativeTarget "Klaus suite" */,
 			);
 			defaultConfigurationName = Release;
 		};
