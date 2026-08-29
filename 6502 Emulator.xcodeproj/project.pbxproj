@@ -11,6 +11,8 @@
 		8217A1CE3042FDEC0071608E /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1C63042FDEC0071608E /* benchmark.cpp */; };
 		8217A1D830433A7E0071608E /* run_klaus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1D730433A7E0071608E /* run_klaus.cpp */; };
 		8217A1DA30433CBD0071608E /* 6502_functional_test.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A1BD3042F88F0071608E /* 6502_functional_test.bin */; };
+		8217A1E030433DF90071608E /* 6502_functional_test.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A1BD3042F88F0071608E /* 6502_functional_test.bin */; };
+		8217A1E630433E2E0071608E /* run_harte.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1E530433E2E0071608E /* run_harte.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,6 +22,14 @@
 			dstSubfolder = Executables;
 			files = (
 				8217A1DA30433CBD0071608E /* 6502_functional_test.bin in CopyFiles */,
+			);
+		};
+		8217A1DF30433DF90071608E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Executables;
+			files = (
+				8217A1E030433DF90071608E /* 6502_functional_test.bin in CopyFiles */,
 			);
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -46,6 +56,8 @@
 		8217A1C83042FDEC0071608E /* json.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = json.hpp; sourceTree = "<group>"; };
 		8217A1D6304339F00071608E /* Klaus suite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Klaus suite"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8217A1D730433A7E0071608E /* run_klaus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = run_klaus.cpp; sourceTree = "<group>"; };
+		8217A1E430433DF90071608E /* Harte suite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Harte suite"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8217A1E530433E2E0071608E /* run_harte.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = run_harte.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,11 @@
 			);
 		};
 		8217A1D2304339F00071608E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		8217A1DE30433DF90071608E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
 			);
@@ -83,6 +100,7 @@
 				000000000000000000000120 /* Functional tests */,
 				8217A1C53042FD890071608E /* Benchmarks */,
 				8217A1D6304339F00071608E /* Klaus suite */,
+				8217A1E430433DF90071608E /* Harte suite */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +136,7 @@
 		8217A1BB3042F7DC0071608E /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				8217A1E530433E2E0071608E /* run_harte.cpp */,
 				8217A1BD3042F88F0071608E /* 6502_functional_test.bin */,
 				8217A1D730433A7E0071608E /* run_klaus.cpp */,
 				8217A1BA3042F7DC0071608E /* test_cpu.cpp */,
@@ -180,6 +199,21 @@
 			productReference = 8217A1D6304339F00071608E /* Klaus suite */;
 			productType = "com.apple.product-type.tool";
 		};
+		8217A1DB30433DF90071608E /* Harte suite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8217A1E130433DF90071608E /* Build configuration list for PBXNativeTarget "Harte suite" */;
+			buildPhases = (
+				8217A1DC30433DF90071608E /* Sources */,
+				8217A1DE30433DF90071608E /* Frameworks */,
+				8217A1DF30433DF90071608E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			name = "Harte suite";
+			productName = Tool;
+			productReference = 8217A1E430433DF90071608E /* Harte suite */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -212,6 +246,7 @@
 				000000000000000100000000 /* Functional tests */,
 				8217A1BE3042FD890071608E /* Benchmarks */,
 				8217A1CF304339F00071608E /* Klaus suite */,
+				8217A1DB30433DF90071608E /* Harte suite */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			files = (
 				8217A1D830433A7E0071608E /* run_klaus.cpp in Sources */,
+			);
+		};
+		8217A1DC30433DF90071608E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				8217A1E630433E2E0071608E /* run_harte.cpp in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
@@ -418,6 +459,22 @@
 			};
 			name = Release;
 		};
+		8217A1E230433DF90071608E /* Debug configuration for PBXNativeTarget "Harte suite" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = include;
+			};
+			name = Debug;
+		};
+		8217A1E330433DF90071608E /* Release configuration for PBXNativeTarget "Harte suite" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = include;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,6 +507,14 @@
 			buildConfigurations = (
 				8217A1D4304339F00071608E /* Debug configuration for PBXNativeTarget "Klaus suite" */,
 				8217A1D5304339F00071608E /* Release configuration for PBXNativeTarget "Klaus suite" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		8217A1E130433DF90071608E /* Build configuration list for PBXNativeTarget "Harte suite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8217A1E230433DF90071608E /* Debug configuration for PBXNativeTarget "Harte suite" */,
+				8217A1E330433DF90071608E /* Release configuration for PBXNativeTarget "Harte suite" */,
 			);
 			defaultConfigurationName = Release;
 		};
