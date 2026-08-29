@@ -1,0 +1,6 @@
+[submodule "Klaus-tests"]
+	path = Klaus-tests
+	url = https://github.com/Klaus2m5/6502_65C02_functional_tests.git
+[submodule "Harte-tests"]
+	path = Harte-tests
+	url = https://github.com/SingleStepTests/ProcessorTests.git
