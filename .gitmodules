@@ -4,3 +4,9 @@
 [submodule "Harte-tests"]
 	path = Harte-tests
 	url = https://github.com/SingleStepTests/ProcessorTests.git
+[submodule "Harte-65x02"]
+	path = Harte-65x02
+	url = https://github.com/SingleStepTests/65x02.git
+[submodule "Harte-65816"]
+	path = Harte-65816
+	url = https://github.com/SingleStepTests/65816.git
