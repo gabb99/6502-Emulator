@@ -11,8 +11,263 @@
 		8217A1CE3042FDEC0071608E /* benchmark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1C63042FDEC0071608E /* benchmark.cpp */; };
 		8217A1D830433A7E0071608E /* run_klaus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1D730433A7E0071608E /* run_klaus.cpp */; };
 		8217A1DA30433CBD0071608E /* 6502_functional_test.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A1BD3042F88F0071608E /* 6502_functional_test.bin */; };
-		8217A1E030433DF90071608E /* 6502_functional_test.bin in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A1BD3042F88F0071608E /* 6502_functional_test.bin */; };
 		8217A1E630433E2E0071608E /* run_harte.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1E530433E2E0071608E /* run_harte.cpp */; };
+		822C17A63043499C007C9994 /* 00.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2EC3043477A0071608E /* 00.json */; };
+		822C17A73043499C007C9994 /* 0a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2ED3043477A0071608E /* 0a.json */; };
+		822C17A83043499C007C9994 /* 0b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2EE3043477A0071608E /* 0b.json */; };
+		822C17A93043499C007C9994 /* 0c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2EF3043477A0071608E /* 0c.json */; };
+		822C17AA3043499C007C9994 /* 0d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F03043477A0071608E /* 0d.json */; };
+		822C17AB3043499C007C9994 /* 0e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F13043477A0071608E /* 0e.json */; };
+		822C17AC3043499C007C9994 /* 0f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F23043477A0071608E /* 0f.json */; };
+		822C17AD3043499C007C9994 /* 01.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F33043477A0071608E /* 01.json */; };
+		822C17AE3043499C007C9994 /* 1a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F43043477A0071608E /* 1a.json */; };
+		822C17AF3043499C007C9994 /* 1b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F53043477A0071608E /* 1b.json */; };
+		822C17B03043499C007C9994 /* 1c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F63043477A0071608E /* 1c.json */; };
+		822C17B13043499C007C9994 /* 1d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F73043477A0071608E /* 1d.json */; };
+		822C17B23043499C007C9994 /* 1e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F83043477A0071608E /* 1e.json */; };
+		822C17B33043499C007C9994 /* 1f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2F93043477A0071608E /* 1f.json */; };
+		822C17B43043499C007C9994 /* 02.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2FA3043477A0071608E /* 02.json */; };
+		822C17B53043499C007C9994 /* 2a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2FB3043477A0071608E /* 2a.json */; };
+		822C17B63043499C007C9994 /* 2b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2FC3043477A0071608E /* 2b.json */; };
+		822C17B73043499C007C9994 /* 2c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2FD3043477A0071608E /* 2c.json */; };
+		822C17B83043499C007C9994 /* 2d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2FE3043477A0071608E /* 2d.json */; };
+		822C17B93043499C007C9994 /* 2e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A2FF3043477A0071608E /* 2e.json */; };
+		822C17BA3043499C007C9994 /* 2f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3003043477A0071608E /* 2f.json */; };
+		822C17BB3043499C007C9994 /* 03.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3013043477A0071608E /* 03.json */; };
+		822C17BC3043499C007C9994 /* 3a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3023043477A0071608E /* 3a.json */; };
+		822C17BD3043499C007C9994 /* 3b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3033043477A0071608E /* 3b.json */; };
+		822C17BE3043499C007C9994 /* 3c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3043043477A0071608E /* 3c.json */; };
+		822C17BF3043499C007C9994 /* 3d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3053043477A0071608E /* 3d.json */; };
+		822C17C03043499C007C9994 /* 3e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3063043477A0071608E /* 3e.json */; };
+		822C17C13043499C007C9994 /* 3f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3073043477A0071608E /* 3f.json */; };
+		822C17C23043499C007C9994 /* 04.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3083043477A0071608E /* 04.json */; };
+		822C17C33043499C007C9994 /* 4a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3093043477A0071608E /* 4a.json */; };
+		822C17C43043499C007C9994 /* 4b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A30A3043477A0071608E /* 4b.json */; };
+		822C17C53043499C007C9994 /* 4c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A30B3043477A0071608E /* 4c.json */; };
+		822C17C63043499C007C9994 /* 4d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A30C3043477A0071608E /* 4d.json */; };
+		822C17C73043499C007C9994 /* 4e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A30D3043477A0071608E /* 4e.json */; };
+		822C17C83043499C007C9994 /* 4f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A30E3043477A0071608E /* 4f.json */; };
+		822C17C93043499C007C9994 /* 05.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A30F3043477A0071608E /* 05.json */; };
+		822C17CA3043499C007C9994 /* 5a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3103043477A0071608E /* 5a.json */; };
+		822C17CB3043499C007C9994 /* 5b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3113043477A0071608E /* 5b.json */; };
+		822C17CC3043499C007C9994 /* 5c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3123043477A0071608E /* 5c.json */; };
+		822C17CD3043499C007C9994 /* 5d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3133043477A0071608E /* 5d.json */; };
+		822C17CE3043499C007C9994 /* 5e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3143043477A0071608E /* 5e.json */; };
+		822C17CF3043499C007C9994 /* 5f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3153043477A0071608E /* 5f.json */; };
+		822C17D03043499C007C9994 /* 06.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3163043477A0071608E /* 06.json */; };
+		822C17D13043499C007C9994 /* 6a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3173043477A0071608E /* 6a.json */; };
+		822C17D23043499C007C9994 /* 6b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3183043477A0071608E /* 6b.json */; };
+		822C17D33043499C007C9994 /* 6c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3193043477A0071608E /* 6c.json */; };
+		822C17D43043499C007C9994 /* 6d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A31A3043477A0071608E /* 6d.json */; };
+		822C17D53043499C007C9994 /* 6e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A31B3043477A0071608E /* 6e.json */; };
+		822C17D63043499C007C9994 /* 6f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A31C3043477A0071608E /* 6f.json */; };
+		822C17D73043499C007C9994 /* 07.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A31D3043477A0071608E /* 07.json */; };
+		822C17D83043499C007C9994 /* 7a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A31E3043477A0071608E /* 7a.json */; };
+		822C17D93043499C007C9994 /* 7b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A31F3043477A0071608E /* 7b.json */; };
+		822C17DA3043499C007C9994 /* 7c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3203043477A0071608E /* 7c.json */; };
+		822C17DB3043499C007C9994 /* 7d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3213043477A0071608E /* 7d.json */; };
+		822C17DC3043499C007C9994 /* 7e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3223043477A0071608E /* 7e.json */; };
+		822C17DD3043499C007C9994 /* 7f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3233043477A0071608E /* 7f.json */; };
+		822C17DE3043499C007C9994 /* 08.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3243043477A0071608E /* 08.json */; };
+		822C17DF3043499C007C9994 /* 8a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3253043477A0071608E /* 8a.json */; };
+		822C17E03043499C007C9994 /* 8b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3263043477A0071608E /* 8b.json */; };
+		822C17E13043499C007C9994 /* 8c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3273043477A0071608E /* 8c.json */; };
+		822C17E23043499C007C9994 /* 8d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3283043477A0071608E /* 8d.json */; };
+		822C17E33043499C007C9994 /* 8e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3293043477A0071608E /* 8e.json */; };
+		822C17E43043499C007C9994 /* 8f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A32A3043477A0071608E /* 8f.json */; };
+		822C17E53043499C007C9994 /* 09.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A32B3043477A0071608E /* 09.json */; };
+		822C17E63043499C007C9994 /* 9a.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A32C3043477A0071608E /* 9a.json */; };
+		822C17E73043499C007C9994 /* 9b.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A32D3043477A0071608E /* 9b.json */; };
+		822C17E83043499C007C9994 /* 9c.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A32E3043477A0071608E /* 9c.json */; };
+		822C17E93043499C007C9994 /* 9d.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A32F3043477A0071608E /* 9d.json */; };
+		822C17EA3043499C007C9994 /* 9e.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3303043477A0071608E /* 9e.json */; };
+		822C17EB3043499C007C9994 /* 9f.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3313043477A0071608E /* 9f.json */; };
+		822C17EC3043499C007C9994 /* 10.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3323043477A0071608E /* 10.json */; };
+		822C17ED3043499C007C9994 /* 11.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3333043477A0071608E /* 11.json */; };
+		822C17EE3043499C007C9994 /* 12.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3343043477A0071608E /* 12.json */; };
+		822C17EF3043499C007C9994 /* 13.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3353043477A0071608E /* 13.json */; };
+		822C17F03043499C007C9994 /* 14.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3363043477A0071608E /* 14.json */; };
+		822C17F13043499C007C9994 /* 15.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3373043477A0071608E /* 15.json */; };
+		822C17F23043499C007C9994 /* 16.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3383043477A0071608E /* 16.json */; };
+		822C17F33043499C007C9994 /* 17.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3393043477A0071608E /* 17.json */; };
+		822C17F43043499C007C9994 /* 18.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A33A3043477A0071608E /* 18.json */; };
+		822C17F53043499C007C9994 /* 19.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A33B3043477A0071608E /* 19.json */; };
+		822C17F63043499C007C9994 /* 20.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A33C3043477A0071608E /* 20.json */; };
+		822C17F73043499C007C9994 /* 21.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A33D3043477A0071608E /* 21.json */; };
+		822C17F83043499C007C9994 /* 22.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A33E3043477A0071608E /* 22.json */; };
+		822C17F93043499C007C9994 /* 23.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A33F3043477A0071608E /* 23.json */; };
+		822C17FA3043499C007C9994 /* 24.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3403043477A0071608E /* 24.json */; };
+		822C17FB3043499C007C9994 /* 25.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3413043477A0071608E /* 25.json */; };
+		822C17FC3043499C007C9994 /* 26.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3423043477A0071608E /* 26.json */; };
+		822C17FD3043499C007C9994 /* 27.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3433043477A0071608E /* 27.json */; };
+		822C17FE3043499C007C9994 /* 28.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3443043477A0071608E /* 28.json */; };
+		822C17FF3043499C007C9994 /* 29.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3453043477A0071608E /* 29.json */; };
+		822C18003043499C007C9994 /* 30.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3463043477A0071608E /* 30.json */; };
+		822C18013043499C007C9994 /* 31.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3473043477A0071608E /* 31.json */; };
+		822C18023043499C007C9994 /* 32.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3483043477A0071608E /* 32.json */; };
+		822C18033043499C007C9994 /* 33.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3493043477A0071608E /* 33.json */; };
+		822C18043043499C007C9994 /* 34.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A34A3043477A0071608E /* 34.json */; };
+		822C18053043499C007C9994 /* 35.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A34B3043477A0071608E /* 35.json */; };
+		822C18063043499C007C9994 /* 36.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A34C3043477A0071608E /* 36.json */; };
+		822C18073043499C007C9994 /* 37.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A34D3043477A0071608E /* 37.json */; };
+		822C18083043499C007C9994 /* 38.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A34E3043477A0071608E /* 38.json */; };
+		822C18093043499C007C9994 /* 39.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A34F3043477A0071608E /* 39.json */; };
+		822C180A3043499C007C9994 /* 40.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3503043477A0071608E /* 40.json */; };
+		822C180B3043499C007C9994 /* 41.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3513043477A0071608E /* 41.json */; };
+		822C180C3043499C007C9994 /* 42.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3523043477A0071608E /* 42.json */; };
+		822C180D3043499C007C9994 /* 43.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3533043477A0071608E /* 43.json */; };
+		822C180E3043499C007C9994 /* 44.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3543043477A0071608E /* 44.json */; };
+		822C180F3043499C007C9994 /* 45.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3553043477A0071608E /* 45.json */; };
+		822C18103043499C007C9994 /* 46.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3563043477A0071608E /* 46.json */; };
+		822C18113043499C007C9994 /* 47.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3573043477A0071608E /* 47.json */; };
+		822C18123043499C007C9994 /* 48.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3583043477A0071608E /* 48.json */; };
+		822C18133043499C007C9994 /* 49.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3593043477A0071608E /* 49.json */; };
+		822C18143043499C007C9994 /* 50.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A35A3043477A0071608E /* 50.json */; };
+		822C18153043499C007C9994 /* 51.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A35B3043477A0071608E /* 51.json */; };
+		822C18163043499C007C9994 /* 52.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A35C3043477A0071608E /* 52.json */; };
+		822C18173043499C007C9994 /* 53.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A35D3043477A0071608E /* 53.json */; };
+		822C18183043499C007C9994 /* 54.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A35E3043477A0071608E /* 54.json */; };
+		822C18193043499C007C9994 /* 55.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A35F3043477A0071608E /* 55.json */; };
+		822C181A3043499C007C9994 /* 56.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3603043477A0071608E /* 56.json */; };
+		822C181B3043499C007C9994 /* 57.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3613043477A0071608E /* 57.json */; };
+		822C181C3043499C007C9994 /* 58.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3623043477A0071608E /* 58.json */; };
+		822C181D3043499C007C9994 /* 59.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3633043477A0071608E /* 59.json */; };
+		822C181E3043499C007C9994 /* 60.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3643043477A0071608E /* 60.json */; };
+		822C181F3043499C007C9994 /* 61.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3653043477A0071608E /* 61.json */; };
+		822C18203043499C007C9994 /* 62.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3663043477A0071608E /* 62.json */; };
+		822C18213043499C007C9994 /* 63.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3673043477A0071608E /* 63.json */; };
+		822C18223043499C007C9994 /* 64.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3683043477A0071608E /* 64.json */; };
+		822C18233043499C007C9994 /* 65.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3693043477A0071608E /* 65.json */; };
+		822C18243043499C007C9994 /* 66.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A36A3043477A0071608E /* 66.json */; };
+		822C18253043499C007C9994 /* 67.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A36B3043477A0071608E /* 67.json */; };
+		822C18263043499C007C9994 /* 68.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A36C3043477A0071608E /* 68.json */; };
+		822C18273043499C007C9994 /* 69.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A36D3043477A0071608E /* 69.json */; };
+		822C18283043499C007C9994 /* 70.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A36E3043477A0071608E /* 70.json */; };
+		822C18293043499C007C9994 /* 71.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A36F3043477A0071608E /* 71.json */; };
+		822C182A3043499C007C9994 /* 72.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3703043477A0071608E /* 72.json */; };
+		822C182B3043499C007C9994 /* 73.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3713043477A0071608E /* 73.json */; };
+		822C182C3043499C007C9994 /* 74.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3723043477A0071608E /* 74.json */; };
+		822C182D3043499C007C9994 /* 75.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3733043477A0071608E /* 75.json */; };
+		822C182E3043499C007C9994 /* 76.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3743043477A0071608E /* 76.json */; };
+		822C182F3043499C007C9994 /* 77.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3753043477A0071608E /* 77.json */; };
+		822C18303043499C007C9994 /* 78.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3763043477A0071608E /* 78.json */; };
+		822C18313043499C007C9994 /* 79.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3773043477A0071608E /* 79.json */; };
+		822C18323043499C007C9994 /* 80.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3783043477A0071608E /* 80.json */; };
+		822C18333043499C007C9994 /* 81.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3793043477A0071608E /* 81.json */; };
+		822C18343043499C007C9994 /* 82.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A37A3043477A0071608E /* 82.json */; };
+		822C18353043499C007C9994 /* 83.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A37B3043477A0071608E /* 83.json */; };
+		822C18363043499C007C9994 /* 84.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A37C3043477A0071608E /* 84.json */; };
+		822C18373043499C007C9994 /* 85.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A37D3043477A0071608E /* 85.json */; };
+		822C18383043499C007C9994 /* 86.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A37E3043477A0071608E /* 86.json */; };
+		822C18393043499C007C9994 /* 87.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A37F3043477A0071608E /* 87.json */; };
+		822C183A3043499C007C9994 /* 88.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3803043477A0071608E /* 88.json */; };
+		822C183B3043499C007C9994 /* 89.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3813043477A0071608E /* 89.json */; };
+		822C183C3043499C007C9994 /* 90.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3823043477A0071608E /* 90.json */; };
+		822C183D3043499C007C9994 /* 91.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3833043477A0071608E /* 91.json */; };
+		822C183E3043499C007C9994 /* 92.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3843043477A0071608E /* 92.json */; };
+		822C183F3043499C007C9994 /* 93.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3853043477A0071608E /* 93.json */; };
+		822C18403043499C007C9994 /* 94.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3863043477A0071608E /* 94.json */; };
+		822C18413043499C007C9994 /* 95.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3873043477A0071608E /* 95.json */; };
+		822C18423043499C007C9994 /* 96.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3883043477A0071608E /* 96.json */; };
+		822C18433043499C007C9994 /* 97.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3893043477A0071608E /* 97.json */; };
+		822C18443043499C007C9994 /* 98.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A38A3043477A0071608E /* 98.json */; };
+		822C18453043499C007C9994 /* 99.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A38B3043477A0071608E /* 99.json */; };
+		822C18463043499C007C9994 /* a0.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A38C3043477A0071608E /* a0.json */; };
+		822C18473043499C007C9994 /* a1.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A38D3043477A0071608E /* a1.json */; };
+		822C18483043499C007C9994 /* a2.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A38E3043477A0071608E /* a2.json */; };
+		822C18493043499C007C9994 /* a3.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A38F3043477A0071608E /* a3.json */; };
+		822C184A3043499C007C9994 /* a4.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3903043477A0071608E /* a4.json */; };
+		822C184B3043499C007C9994 /* a5.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3913043477A0071608E /* a5.json */; };
+		822C184C3043499C007C9994 /* a6.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3923043477A0071608E /* a6.json */; };
+		822C184D3043499C007C9994 /* a7.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3933043477A0071608E /* a7.json */; };
+		822C184E3043499C007C9994 /* a8.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3943043477A0071608E /* a8.json */; };
+		822C184F3043499C007C9994 /* a9.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3953043477A0071608E /* a9.json */; };
+		822C18503043499C007C9994 /* aa.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3963043477A0071608E /* aa.json */; };
+		822C18513043499C007C9994 /* ab.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3973043477A0071608E /* ab.json */; };
+		822C18523043499C007C9994 /* ac.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3983043477A0071608E /* ac.json */; };
+		822C18533043499C007C9994 /* ad.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3993043477A0071608E /* ad.json */; };
+		822C18543043499C007C9994 /* ae.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A39A3043477A0071608E /* ae.json */; };
+		822C18553043499C007C9994 /* af.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A39B3043477A0071608E /* af.json */; };
+		822C18563043499C007C9994 /* b0.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A39C3043477A0071608E /* b0.json */; };
+		822C18573043499C007C9994 /* b1.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A39D3043477A0071608E /* b1.json */; };
+		822C18583043499C007C9994 /* b2.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A39E3043477A0071608E /* b2.json */; };
+		822C18593043499C007C9994 /* b3.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A39F3043477A0071608E /* b3.json */; };
+		822C185A3043499C007C9994 /* b4.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A03043477A0071608E /* b4.json */; };
+		822C185B3043499C007C9994 /* b5.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A13043477A0071608E /* b5.json */; };
+		822C185C3043499C007C9994 /* b6.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A23043477A0071608E /* b6.json */; };
+		822C185D3043499C007C9994 /* b7.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A33043477A0071608E /* b7.json */; };
+		822C185E3043499C007C9994 /* b8.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A43043477A0071608E /* b8.json */; };
+		822C185F3043499C007C9994 /* b9.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A53043477A0071608E /* b9.json */; };
+		822C18603043499C007C9994 /* ba.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A63043477A0071608E /* ba.json */; };
+		822C18613043499C007C9994 /* bb.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A73043477A0071608E /* bb.json */; };
+		822C18623043499C007C9994 /* bc.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A83043477A0071608E /* bc.json */; };
+		822C18633043499C007C9994 /* bd.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3A93043477A0071608E /* bd.json */; };
+		822C18643043499C007C9994 /* be.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3AA3043477A0071608E /* be.json */; };
+		822C18653043499C007C9994 /* bf.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3AB3043477A0071608E /* bf.json */; };
+		822C18663043499C007C9994 /* c0.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3AC3043477A0071608E /* c0.json */; };
+		822C18673043499C007C9994 /* c1.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3AD3043477A0071608E /* c1.json */; };
+		822C18683043499C007C9994 /* c2.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3AE3043477A0071608E /* c2.json */; };
+		822C18693043499C007C9994 /* c3.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3AF3043477A0071608E /* c3.json */; };
+		822C186A3043499C007C9994 /* c4.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B03043477A0071608E /* c4.json */; };
+		822C186B3043499C007C9994 /* c5.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B13043477A0071608E /* c5.json */; };
+		822C186C3043499C007C9994 /* c6.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B23043477A0071608E /* c6.json */; };
+		822C186D3043499C007C9994 /* c7.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B33043477A0071608E /* c7.json */; };
+		822C186E3043499C007C9994 /* c8.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B43043477A0071608E /* c8.json */; };
+		822C186F3043499C007C9994 /* c9.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B53043477A0071608E /* c9.json */; };
+		822C18703043499C007C9994 /* ca.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B63043477A0071608E /* ca.json */; };
+		822C18713043499C007C9994 /* cb.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B73043477A0071608E /* cb.json */; };
+		822C18723043499C007C9994 /* cc.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B83043477A0071608E /* cc.json */; };
+		822C18733043499C007C9994 /* cd.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3B93043477A0071608E /* cd.json */; };
+		822C18743043499C007C9994 /* ce.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3BA3043477A0071608E /* ce.json */; };
+		822C18753043499C007C9994 /* cf.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3BB3043477A0071608E /* cf.json */; };
+		822C18763043499C007C9994 /* d0.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3BC3043477A0071608E /* d0.json */; };
+		822C18773043499C007C9994 /* d1.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3BD3043477A0071608E /* d1.json */; };
+		822C18783043499C007C9994 /* d2.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3BE3043477A0071608E /* d2.json */; };
+		822C18793043499C007C9994 /* d3.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3BF3043477A0071608E /* d3.json */; };
+		822C187A3043499C007C9994 /* d4.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C03043477A0071608E /* d4.json */; };
+		822C187B3043499C007C9994 /* d5.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C13043477A0071608E /* d5.json */; };
+		822C187C3043499C007C9994 /* d6.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C23043477A0071608E /* d6.json */; };
+		822C187D3043499C007C9994 /* d7.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C33043477A0071608E /* d7.json */; };
+		822C187E3043499C007C9994 /* d8.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C43043477A0071608E /* d8.json */; };
+		822C187F3043499C007C9994 /* d9.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C53043477A0071608E /* d9.json */; };
+		822C18803043499C007C9994 /* da.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C63043477A0071608E /* da.json */; };
+		822C18813043499C007C9994 /* db.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C73043477A0071608E /* db.json */; };
+		822C18823043499C007C9994 /* dc.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C83043477A0071608E /* dc.json */; };
+		822C18833043499C007C9994 /* dd.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3C93043477A0071608E /* dd.json */; };
+		822C18843043499C007C9994 /* de.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3CA3043477A0071608E /* de.json */; };
+		822C18853043499C007C9994 /* df.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3CB3043477A0071608E /* df.json */; };
+		822C18863043499C007C9994 /* e0.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3CC3043477A0071608E /* e0.json */; };
+		822C18873043499C007C9994 /* e1.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3CD3043477A0071608E /* e1.json */; };
+		822C18883043499C007C9994 /* e2.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3CE3043477A0071608E /* e2.json */; };
+		822C18893043499C007C9994 /* e3.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3CF3043477A0071608E /* e3.json */; };
+		822C188A3043499C007C9994 /* e4.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D03043477A0071608E /* e4.json */; };
+		822C188B3043499C007C9994 /* e5.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D13043477A0071608E /* e5.json */; };
+		822C188C3043499C007C9994 /* e6.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D23043477A0071608E /* e6.json */; };
+		822C188D3043499C007C9994 /* e7.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D33043477A0071608E /* e7.json */; };
+		822C188E3043499C007C9994 /* e8.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D43043477A0071608E /* e8.json */; };
+		822C188F3043499C007C9994 /* e9.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D53043477A0071608E /* e9.json */; };
+		822C18903043499C007C9994 /* ea.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D63043477A0071608E /* ea.json */; };
+		822C18913043499C007C9994 /* eb.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D73043477A0071608E /* eb.json */; };
+		822C18923043499C007C9994 /* ec.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D83043477A0071608E /* ec.json */; };
+		822C18933043499C007C9994 /* ed.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3D93043477A0071608E /* ed.json */; };
+		822C18943043499C007C9994 /* ee.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3DA3043477A0071608E /* ee.json */; };
+		822C18953043499C007C9994 /* ef.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3DB3043477A0071608E /* ef.json */; };
+		822C18963043499C007C9994 /* f0.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3DC3043477A0071608E /* f0.json */; };
+		822C18973043499C007C9994 /* f1.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3DD3043477A0071608E /* f1.json */; };
+		822C18983043499C007C9994 /* f2.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3DE3043477A0071608E /* f2.json */; };
+		822C18993043499C007C9994 /* f3.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3DF3043477A0071608E /* f3.json */; };
+		822C189A3043499C007C9994 /* f4.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E03043477A0071608E /* f4.json */; };
+		822C189B3043499C007C9994 /* f5.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E13043477A0071608E /* f5.json */; };
+		822C189C3043499C007C9994 /* f6.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E23043477A0071608E /* f6.json */; };
+		822C189D3043499C007C9994 /* f7.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E33043477A0071608E /* f7.json */; };
+		822C189E3043499C007C9994 /* f8.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E43043477A0071608E /* f8.json */; };
+		822C189F3043499C007C9994 /* f9.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E53043477A0071608E /* f9.json */; };
+		822C18A03043499C007C9994 /* fa.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E63043477A0071608E /* fa.json */; };
+		822C18A13043499C007C9994 /* fb.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E73043477A0071608E /* fb.json */; };
+		822C18A23043499C007C9994 /* fc.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E83043477A0071608E /* fc.json */; };
+		822C18A33043499C007C9994 /* fd.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3E93043477A0071608E /* fd.json */; };
+		822C18A43043499C007C9994 /* fe.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3EA3043477A0071608E /* fe.json */; };
+		822C18A53043499C007C9994 /* ff.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8217A3EB3043477A0071608E /* ff.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,7 +284,262 @@
 			dstPath = "";
 			dstSubfolder = Executables;
 			files = (
-				8217A1E030433DF90071608E /* 6502_functional_test.bin in CopyFiles */,
+				822C17A63043499C007C9994 /* 00.json in CopyFiles */,
+				822C17A73043499C007C9994 /* 0a.json in CopyFiles */,
+				822C17A83043499C007C9994 /* 0b.json in CopyFiles */,
+				822C17A93043499C007C9994 /* 0c.json in CopyFiles */,
+				822C17AA3043499C007C9994 /* 0d.json in CopyFiles */,
+				822C17AB3043499C007C9994 /* 0e.json in CopyFiles */,
+				822C17AC3043499C007C9994 /* 0f.json in CopyFiles */,
+				822C17AD3043499C007C9994 /* 01.json in CopyFiles */,
+				822C17AE3043499C007C9994 /* 1a.json in CopyFiles */,
+				822C17AF3043499C007C9994 /* 1b.json in CopyFiles */,
+				822C17B03043499C007C9994 /* 1c.json in CopyFiles */,
+				822C17B13043499C007C9994 /* 1d.json in CopyFiles */,
+				822C17B23043499C007C9994 /* 1e.json in CopyFiles */,
+				822C17B33043499C007C9994 /* 1f.json in CopyFiles */,
+				822C17B43043499C007C9994 /* 02.json in CopyFiles */,
+				822C17B53043499C007C9994 /* 2a.json in CopyFiles */,
+				822C17B63043499C007C9994 /* 2b.json in CopyFiles */,
+				822C17B73043499C007C9994 /* 2c.json in CopyFiles */,
+				822C17B83043499C007C9994 /* 2d.json in CopyFiles */,
+				822C17B93043499C007C9994 /* 2e.json in CopyFiles */,
+				822C17BA3043499C007C9994 /* 2f.json in CopyFiles */,
+				822C17BB3043499C007C9994 /* 03.json in CopyFiles */,
+				822C17BC3043499C007C9994 /* 3a.json in CopyFiles */,
+				822C17BD3043499C007C9994 /* 3b.json in CopyFiles */,
+				822C17BE3043499C007C9994 /* 3c.json in CopyFiles */,
+				822C17BF3043499C007C9994 /* 3d.json in CopyFiles */,
+				822C17C03043499C007C9994 /* 3e.json in CopyFiles */,
+				822C17C13043499C007C9994 /* 3f.json in CopyFiles */,
+				822C17C23043499C007C9994 /* 04.json in CopyFiles */,
+				822C17C33043499C007C9994 /* 4a.json in CopyFiles */,
+				822C17C43043499C007C9994 /* 4b.json in CopyFiles */,
+				822C17C53043499C007C9994 /* 4c.json in CopyFiles */,
+				822C17C63043499C007C9994 /* 4d.json in CopyFiles */,
+				822C17C73043499C007C9994 /* 4e.json in CopyFiles */,
+				822C17C83043499C007C9994 /* 4f.json in CopyFiles */,
+				822C17C93043499C007C9994 /* 05.json in CopyFiles */,
+				822C17CA3043499C007C9994 /* 5a.json in CopyFiles */,
+				822C17CB3043499C007C9994 /* 5b.json in CopyFiles */,
+				822C17CC3043499C007C9994 /* 5c.json in CopyFiles */,
+				822C17CD3043499C007C9994 /* 5d.json in CopyFiles */,
+				822C17CE3043499C007C9994 /* 5e.json in CopyFiles */,
+				822C17CF3043499C007C9994 /* 5f.json in CopyFiles */,
+				822C17D03043499C007C9994 /* 06.json in CopyFiles */,
+				822C17D13043499C007C9994 /* 6a.json in CopyFiles */,
+				822C17D23043499C007C9994 /* 6b.json in CopyFiles */,
+				822C17D33043499C007C9994 /* 6c.json in CopyFiles */,
+				822C17D43043499C007C9994 /* 6d.json in CopyFiles */,
+				822C17D53043499C007C9994 /* 6e.json in CopyFiles */,
+				822C17D63043499C007C9994 /* 6f.json in CopyFiles */,
+				822C17D73043499C007C9994 /* 07.json in CopyFiles */,
+				822C17D83043499C007C9994 /* 7a.json in CopyFiles */,
+				822C17D93043499C007C9994 /* 7b.json in CopyFiles */,
+				822C17DA3043499C007C9994 /* 7c.json in CopyFiles */,
+				822C17DB3043499C007C9994 /* 7d.json in CopyFiles */,
+				822C17DC3043499C007C9994 /* 7e.json in CopyFiles */,
+				822C17DD3043499C007C9994 /* 7f.json in CopyFiles */,
+				822C17DE3043499C007C9994 /* 08.json in CopyFiles */,
+				822C17DF3043499C007C9994 /* 8a.json in CopyFiles */,
+				822C17E03043499C007C9994 /* 8b.json in CopyFiles */,
+				822C17E13043499C007C9994 /* 8c.json in CopyFiles */,
+				822C17E23043499C007C9994 /* 8d.json in CopyFiles */,
+				822C17E33043499C007C9994 /* 8e.json in CopyFiles */,
+				822C17E43043499C007C9994 /* 8f.json in CopyFiles */,
+				822C17E53043499C007C9994 /* 09.json in CopyFiles */,
+				822C17E63043499C007C9994 /* 9a.json in CopyFiles */,
+				822C17E73043499C007C9994 /* 9b.json in CopyFiles */,
+				822C17E83043499C007C9994 /* 9c.json in CopyFiles */,
+				822C17E93043499C007C9994 /* 9d.json in CopyFiles */,
+				822C17EA3043499C007C9994 /* 9e.json in CopyFiles */,
+				822C17EB3043499C007C9994 /* 9f.json in CopyFiles */,
+				822C17EC3043499C007C9994 /* 10.json in CopyFiles */,
+				822C17ED3043499C007C9994 /* 11.json in CopyFiles */,
+				822C17EE3043499C007C9994 /* 12.json in CopyFiles */,
+				822C17EF3043499C007C9994 /* 13.json in CopyFiles */,
+				822C17F03043499C007C9994 /* 14.json in CopyFiles */,
+				822C17F13043499C007C9994 /* 15.json in CopyFiles */,
+				822C17F23043499C007C9994 /* 16.json in CopyFiles */,
+				822C17F33043499C007C9994 /* 17.json in CopyFiles */,
+				822C17F43043499C007C9994 /* 18.json in CopyFiles */,
+				822C17F53043499C007C9994 /* 19.json in CopyFiles */,
+				822C17F63043499C007C9994 /* 20.json in CopyFiles */,
+				822C17F73043499C007C9994 /* 21.json in CopyFiles */,
+				822C17F83043499C007C9994 /* 22.json in CopyFiles */,
+				822C17F93043499C007C9994 /* 23.json in CopyFiles */,
+				822C17FA3043499C007C9994 /* 24.json in CopyFiles */,
+				822C17FB3043499C007C9994 /* 25.json in CopyFiles */,
+				822C17FC3043499C007C9994 /* 26.json in CopyFiles */,
+				822C17FD3043499C007C9994 /* 27.json in CopyFiles */,
+				822C17FE3043499C007C9994 /* 28.json in CopyFiles */,
+				822C17FF3043499C007C9994 /* 29.json in CopyFiles */,
+				822C18003043499C007C9994 /* 30.json in CopyFiles */,
+				822C18013043499C007C9994 /* 31.json in CopyFiles */,
+				822C18023043499C007C9994 /* 32.json in CopyFiles */,
+				822C18033043499C007C9994 /* 33.json in CopyFiles */,
+				822C18043043499C007C9994 /* 34.json in CopyFiles */,
+				822C18053043499C007C9994 /* 35.json in CopyFiles */,
+				822C18063043499C007C9994 /* 36.json in CopyFiles */,
+				822C18073043499C007C9994 /* 37.json in CopyFiles */,
+				822C18083043499C007C9994 /* 38.json in CopyFiles */,
+				822C18093043499C007C9994 /* 39.json in CopyFiles */,
+				822C180A3043499C007C9994 /* 40.json in CopyFiles */,
+				822C180B3043499C007C9994 /* 41.json in CopyFiles */,
+				822C180C3043499C007C9994 /* 42.json in CopyFiles */,
+				822C180D3043499C007C9994 /* 43.json in CopyFiles */,
+				822C180E3043499C007C9994 /* 44.json in CopyFiles */,
+				822C180F3043499C007C9994 /* 45.json in CopyFiles */,
+				822C18103043499C007C9994 /* 46.json in CopyFiles */,
+				822C18113043499C007C9994 /* 47.json in CopyFiles */,
+				822C18123043499C007C9994 /* 48.json in CopyFiles */,
+				822C18133043499C007C9994 /* 49.json in CopyFiles */,
+				822C18143043499C007C9994 /* 50.json in CopyFiles */,
+				822C18153043499C007C9994 /* 51.json in CopyFiles */,
+				822C18163043499C007C9994 /* 52.json in CopyFiles */,
+				822C18173043499C007C9994 /* 53.json in CopyFiles */,
+				822C18183043499C007C9994 /* 54.json in CopyFiles */,
+				822C18193043499C007C9994 /* 55.json in CopyFiles */,
+				822C181A3043499C007C9994 /* 56.json in CopyFiles */,
+				822C181B3043499C007C9994 /* 57.json in CopyFiles */,
+				822C181C3043499C007C9994 /* 58.json in CopyFiles */,
+				822C181D3043499C007C9994 /* 59.json in CopyFiles */,
+				822C181E3043499C007C9994 /* 60.json in CopyFiles */,
+				822C181F3043499C007C9994 /* 61.json in CopyFiles */,
+				822C18203043499C007C9994 /* 62.json in CopyFiles */,
+				822C18213043499C007C9994 /* 63.json in CopyFiles */,
+				822C18223043499C007C9994 /* 64.json in CopyFiles */,
+				822C18233043499C007C9994 /* 65.json in CopyFiles */,
+				822C18243043499C007C9994 /* 66.json in CopyFiles */,
+				822C18253043499C007C9994 /* 67.json in CopyFiles */,
+				822C18263043499C007C9994 /* 68.json in CopyFiles */,
+				822C18273043499C007C9994 /* 69.json in CopyFiles */,
+				822C18283043499C007C9994 /* 70.json in CopyFiles */,
+				822C18293043499C007C9994 /* 71.json in CopyFiles */,
+				822C182A3043499C007C9994 /* 72.json in CopyFiles */,
+				822C182B3043499C007C9994 /* 73.json in CopyFiles */,
+				822C182C3043499C007C9994 /* 74.json in CopyFiles */,
+				822C182D3043499C007C9994 /* 75.json in CopyFiles */,
+				822C182E3043499C007C9994 /* 76.json in CopyFiles */,
+				822C182F3043499C007C9994 /* 77.json in CopyFiles */,
+				822C18303043499C007C9994 /* 78.json in CopyFiles */,
+				822C18313043499C007C9994 /* 79.json in CopyFiles */,
+				822C18323043499C007C9994 /* 80.json in CopyFiles */,
+				822C18333043499C007C9994 /* 81.json in CopyFiles */,
+				822C18343043499C007C9994 /* 82.json in CopyFiles */,
+				822C18353043499C007C9994 /* 83.json in CopyFiles */,
+				822C18363043499C007C9994 /* 84.json in CopyFiles */,
+				822C18373043499C007C9994 /* 85.json in CopyFiles */,
+				822C18383043499C007C9994 /* 86.json in CopyFiles */,
+				822C18393043499C007C9994 /* 87.json in CopyFiles */,
+				822C183A3043499C007C9994 /* 88.json in CopyFiles */,
+				822C183B3043499C007C9994 /* 89.json in CopyFiles */,
+				822C183C3043499C007C9994 /* 90.json in CopyFiles */,
+				822C183D3043499C007C9994 /* 91.json in CopyFiles */,
+				822C183E3043499C007C9994 /* 92.json in CopyFiles */,
+				822C183F3043499C007C9994 /* 93.json in CopyFiles */,
+				822C18403043499C007C9994 /* 94.json in CopyFiles */,
+				822C18413043499C007C9994 /* 95.json in CopyFiles */,
+				822C18423043499C007C9994 /* 96.json in CopyFiles */,
+				822C18433043499C007C9994 /* 97.json in CopyFiles */,
+				822C18443043499C007C9994 /* 98.json in CopyFiles */,
+				822C18453043499C007C9994 /* 99.json in CopyFiles */,
+				822C18463043499C007C9994 /* a0.json in CopyFiles */,
+				822C18473043499C007C9994 /* a1.json in CopyFiles */,
+				822C18483043499C007C9994 /* a2.json in CopyFiles */,
+				822C18493043499C007C9994 /* a3.json in CopyFiles */,
+				822C184A3043499C007C9994 /* a4.json in CopyFiles */,
+				822C184B3043499C007C9994 /* a5.json in CopyFiles */,
+				822C184C3043499C007C9994 /* a6.json in CopyFiles */,
+				822C184D3043499C007C9994 /* a7.json in CopyFiles */,
+				822C184E3043499C007C9994 /* a8.json in CopyFiles */,
+				822C184F3043499C007C9994 /* a9.json in CopyFiles */,
+				822C18503043499C007C9994 /* aa.json in CopyFiles */,
+				822C18513043499C007C9994 /* ab.json in CopyFiles */,
+				822C18523043499C007C9994 /* ac.json in CopyFiles */,
+				822C18533043499C007C9994 /* ad.json in CopyFiles */,
+				822C18543043499C007C9994 /* ae.json in CopyFiles */,
+				822C18553043499C007C9994 /* af.json in CopyFiles */,
+				822C18563043499C007C9994 /* b0.json in CopyFiles */,
+				822C18573043499C007C9994 /* b1.json in CopyFiles */,
+				822C18583043499C007C9994 /* b2.json in CopyFiles */,
+				822C18593043499C007C9994 /* b3.json in CopyFiles */,
+				822C185A3043499C007C9994 /* b4.json in CopyFiles */,
+				822C185B3043499C007C9994 /* b5.json in CopyFiles */,
+				822C185C3043499C007C9994 /* b6.json in CopyFiles */,
+				822C185D3043499C007C9994 /* b7.json in CopyFiles */,
+				822C185E3043499C007C9994 /* b8.json in CopyFiles */,
+				822C185F3043499C007C9994 /* b9.json in CopyFiles */,
+				822C18603043499C007C9994 /* ba.json in CopyFiles */,
+				822C18613043499C007C9994 /* bb.json in CopyFiles */,
+				822C18623043499C007C9994 /* bc.json in CopyFiles */,
+				822C18633043499C007C9994 /* bd.json in CopyFiles */,
+				822C18643043499C007C9994 /* be.json in CopyFiles */,
+				822C18653043499C007C9994 /* bf.json in CopyFiles */,
+				822C18663043499C007C9994 /* c0.json in CopyFiles */,
+				822C18673043499C007C9994 /* c1.json in CopyFiles */,
+				822C18683043499C007C9994 /* c2.json in CopyFiles */,
+				822C18693043499C007C9994 /* c3.json in CopyFiles */,
+				822C186A3043499C007C9994 /* c4.json in CopyFiles */,
+				822C186B3043499C007C9994 /* c5.json in CopyFiles */,
+				822C186C3043499C007C9994 /* c6.json in CopyFiles */,
+				822C186D3043499C007C9994 /* c7.json in CopyFiles */,
+				822C186E3043499C007C9994 /* c8.json in CopyFiles */,
+				822C186F3043499C007C9994 /* c9.json in CopyFiles */,
+				822C18703043499C007C9994 /* ca.json in CopyFiles */,
+				822C18713043499C007C9994 /* cb.json in CopyFiles */,
+				822C18723043499C007C9994 /* cc.json in CopyFiles */,
+				822C18733043499C007C9994 /* cd.json in CopyFiles */,
+				822C18743043499C007C9994 /* ce.json in CopyFiles */,
+				822C18753043499C007C9994 /* cf.json in CopyFiles */,
+				822C18763043499C007C9994 /* d0.json in CopyFiles */,
+				822C18773043499C007C9994 /* d1.json in CopyFiles */,
+				822C18783043499C007C9994 /* d2.json in CopyFiles */,
+				822C18793043499C007C9994 /* d3.json in CopyFiles */,
+				822C187A3043499C007C9994 /* d4.json in CopyFiles */,
+				822C187B3043499C007C9994 /* d5.json in CopyFiles */,
+				822C187C3043499C007C9994 /* d6.json in CopyFiles */,
+				822C187D3043499C007C9994 /* d7.json in CopyFiles */,
+				822C187E3043499C007C9994 /* d8.json in CopyFiles */,
+				822C187F3043499C007C9994 /* d9.json in CopyFiles */,
+				822C18803043499C007C9994 /* da.json in CopyFiles */,
+				822C18813043499C007C9994 /* db.json in CopyFiles */,
+				822C18823043499C007C9994 /* dc.json in CopyFiles */,
+				822C18833043499C007C9994 /* dd.json in CopyFiles */,
+				822C18843043499C007C9994 /* de.json in CopyFiles */,
+				822C18853043499C007C9994 /* df.json in CopyFiles */,
+				822C18863043499C007C9994 /* e0.json in CopyFiles */,
+				822C18873043499C007C9994 /* e1.json in CopyFiles */,
+				822C18883043499C007C9994 /* e2.json in CopyFiles */,
+				822C18893043499C007C9994 /* e3.json in CopyFiles */,
+				822C188A3043499C007C9994 /* e4.json in CopyFiles */,
+				822C188B3043499C007C9994 /* e5.json in CopyFiles */,
+				822C188C3043499C007C9994 /* e6.json in CopyFiles */,
+				822C188D3043499C007C9994 /* e7.json in CopyFiles */,
+				822C188E3043499C007C9994 /* e8.json in CopyFiles */,
+				822C188F3043499C007C9994 /* e9.json in CopyFiles */,
+				822C18903043499C007C9994 /* ea.json in CopyFiles */,
+				822C18913043499C007C9994 /* eb.json in CopyFiles */,
+				822C18923043499C007C9994 /* ec.json in CopyFiles */,
+				822C18933043499C007C9994 /* ed.json in CopyFiles */,
+				822C18943043499C007C9994 /* ee.json in CopyFiles */,
+				822C18953043499C007C9994 /* ef.json in CopyFiles */,
+				822C18963043499C007C9994 /* f0.json in CopyFiles */,
+				822C18973043499C007C9994 /* f1.json in CopyFiles */,
+				822C18983043499C007C9994 /* f2.json in CopyFiles */,
+				822C18993043499C007C9994 /* f3.json in CopyFiles */,
+				822C189A3043499C007C9994 /* f4.json in CopyFiles */,
+				822C189B3043499C007C9994 /* f5.json in CopyFiles */,
+				822C189C3043499C007C9994 /* f6.json in CopyFiles */,
+				822C189D3043499C007C9994 /* f7.json in CopyFiles */,
+				822C189E3043499C007C9994 /* f8.json in CopyFiles */,
+				822C189F3043499C007C9994 /* f9.json in CopyFiles */,
+				822C18A03043499C007C9994 /* fa.json in CopyFiles */,
+				822C18A13043499C007C9994 /* fb.json in CopyFiles */,
+				822C18A23043499C007C9994 /* fc.json in CopyFiles */,
+				822C18A33043499C007C9994 /* fd.json in CopyFiles */,
+				822C18A43043499C007C9994 /* fe.json in CopyFiles */,
+				822C18A53043499C007C9994 /* ff.json in CopyFiles */,
 			);
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -58,6 +568,262 @@
 		8217A1D730433A7E0071608E /* run_klaus.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = run_klaus.cpp; sourceTree = "<group>"; };
 		8217A1E430433DF90071608E /* Harte suite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Harte suite"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8217A1E530433E2E0071608E /* run_harte.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = run_harte.cpp; sourceTree = "<group>"; };
+		8217A2EC3043477A0071608E /* 00.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 00.json; path = "Harte-65x02/6502/v1/00.json"; sourceTree = SOURCE_ROOT; };
+		8217A2ED3043477A0071608E /* 0a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 0a.json; path = "Harte-65x02/6502/v1/0a.json"; sourceTree = SOURCE_ROOT; };
+		8217A2EE3043477A0071608E /* 0b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 0b.json; path = "Harte-65x02/6502/v1/0b.json"; sourceTree = SOURCE_ROOT; };
+		8217A2EF3043477A0071608E /* 0c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 0c.json; path = "Harte-65x02/6502/v1/0c.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F03043477A0071608E /* 0d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 0d.json; path = "Harte-65x02/6502/v1/0d.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F13043477A0071608E /* 0e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 0e.json; path = "Harte-65x02/6502/v1/0e.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F23043477A0071608E /* 0f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 0f.json; path = "Harte-65x02/6502/v1/0f.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F33043477A0071608E /* 01.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 01.json; path = "Harte-65x02/6502/v1/01.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F43043477A0071608E /* 1a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 1a.json; path = "Harte-65x02/6502/v1/1a.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F53043477A0071608E /* 1b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 1b.json; path = "Harte-65x02/6502/v1/1b.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F63043477A0071608E /* 1c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 1c.json; path = "Harte-65x02/6502/v1/1c.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F73043477A0071608E /* 1d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 1d.json; path = "Harte-65x02/6502/v1/1d.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F83043477A0071608E /* 1e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 1e.json; path = "Harte-65x02/6502/v1/1e.json"; sourceTree = SOURCE_ROOT; };
+		8217A2F93043477A0071608E /* 1f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 1f.json; path = "Harte-65x02/6502/v1/1f.json"; sourceTree = SOURCE_ROOT; };
+		8217A2FA3043477A0071608E /* 02.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 02.json; path = "Harte-65x02/6502/v1/02.json"; sourceTree = SOURCE_ROOT; };
+		8217A2FB3043477A0071608E /* 2a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 2a.json; path = "Harte-65x02/6502/v1/2a.json"; sourceTree = SOURCE_ROOT; };
+		8217A2FC3043477A0071608E /* 2b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 2b.json; path = "Harte-65x02/6502/v1/2b.json"; sourceTree = SOURCE_ROOT; };
+		8217A2FD3043477A0071608E /* 2c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 2c.json; path = "Harte-65x02/6502/v1/2c.json"; sourceTree = SOURCE_ROOT; };
+		8217A2FE3043477A0071608E /* 2d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 2d.json; path = "Harte-65x02/6502/v1/2d.json"; sourceTree = SOURCE_ROOT; };
+		8217A2FF3043477A0071608E /* 2e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 2e.json; path = "Harte-65x02/6502/v1/2e.json"; sourceTree = SOURCE_ROOT; };
+		8217A3003043477A0071608E /* 2f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 2f.json; path = "Harte-65x02/6502/v1/2f.json"; sourceTree = SOURCE_ROOT; };
+		8217A3013043477A0071608E /* 03.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 03.json; path = "Harte-65x02/6502/v1/03.json"; sourceTree = SOURCE_ROOT; };
+		8217A3023043477A0071608E /* 3a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 3a.json; path = "Harte-65x02/6502/v1/3a.json"; sourceTree = SOURCE_ROOT; };
+		8217A3033043477A0071608E /* 3b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 3b.json; path = "Harte-65x02/6502/v1/3b.json"; sourceTree = SOURCE_ROOT; };
+		8217A3043043477A0071608E /* 3c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 3c.json; path = "Harte-65x02/6502/v1/3c.json"; sourceTree = SOURCE_ROOT; };
+		8217A3053043477A0071608E /* 3d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 3d.json; path = "Harte-65x02/6502/v1/3d.json"; sourceTree = SOURCE_ROOT; };
+		8217A3063043477A0071608E /* 3e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 3e.json; path = "Harte-65x02/6502/v1/3e.json"; sourceTree = SOURCE_ROOT; };
+		8217A3073043477A0071608E /* 3f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 3f.json; path = "Harte-65x02/6502/v1/3f.json"; sourceTree = SOURCE_ROOT; };
+		8217A3083043477A0071608E /* 04.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 04.json; path = "Harte-65x02/6502/v1/04.json"; sourceTree = SOURCE_ROOT; };
+		8217A3093043477A0071608E /* 4a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 4a.json; path = "Harte-65x02/6502/v1/4a.json"; sourceTree = SOURCE_ROOT; };
+		8217A30A3043477A0071608E /* 4b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 4b.json; path = "Harte-65x02/6502/v1/4b.json"; sourceTree = SOURCE_ROOT; };
+		8217A30B3043477A0071608E /* 4c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 4c.json; path = "Harte-65x02/6502/v1/4c.json"; sourceTree = SOURCE_ROOT; };
+		8217A30C3043477A0071608E /* 4d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 4d.json; path = "Harte-65x02/6502/v1/4d.json"; sourceTree = SOURCE_ROOT; };
+		8217A30D3043477A0071608E /* 4e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 4e.json; path = "Harte-65x02/6502/v1/4e.json"; sourceTree = SOURCE_ROOT; };
+		8217A30E3043477A0071608E /* 4f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 4f.json; path = "Harte-65x02/6502/v1/4f.json"; sourceTree = SOURCE_ROOT; };
+		8217A30F3043477A0071608E /* 05.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 05.json; path = "Harte-65x02/6502/v1/05.json"; sourceTree = SOURCE_ROOT; };
+		8217A3103043477A0071608E /* 5a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 5a.json; path = "Harte-65x02/6502/v1/5a.json"; sourceTree = SOURCE_ROOT; };
+		8217A3113043477A0071608E /* 5b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 5b.json; path = "Harte-65x02/6502/v1/5b.json"; sourceTree = SOURCE_ROOT; };
+		8217A3123043477A0071608E /* 5c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 5c.json; path = "Harte-65x02/6502/v1/5c.json"; sourceTree = SOURCE_ROOT; };
+		8217A3133043477A0071608E /* 5d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 5d.json; path = "Harte-65x02/6502/v1/5d.json"; sourceTree = SOURCE_ROOT; };
+		8217A3143043477A0071608E /* 5e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 5e.json; path = "Harte-65x02/6502/v1/5e.json"; sourceTree = SOURCE_ROOT; };
+		8217A3153043477A0071608E /* 5f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 5f.json; path = "Harte-65x02/6502/v1/5f.json"; sourceTree = SOURCE_ROOT; };
+		8217A3163043477A0071608E /* 06.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 06.json; path = "Harte-65x02/6502/v1/06.json"; sourceTree = SOURCE_ROOT; };
+		8217A3173043477A0071608E /* 6a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 6a.json; path = "Harte-65x02/6502/v1/6a.json"; sourceTree = SOURCE_ROOT; };
+		8217A3183043477A0071608E /* 6b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 6b.json; path = "Harte-65x02/6502/v1/6b.json"; sourceTree = SOURCE_ROOT; };
+		8217A3193043477A0071608E /* 6c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 6c.json; path = "Harte-65x02/6502/v1/6c.json"; sourceTree = SOURCE_ROOT; };
+		8217A31A3043477A0071608E /* 6d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 6d.json; path = "Harte-65x02/6502/v1/6d.json"; sourceTree = SOURCE_ROOT; };
+		8217A31B3043477A0071608E /* 6e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 6e.json; path = "Harte-65x02/6502/v1/6e.json"; sourceTree = SOURCE_ROOT; };
+		8217A31C3043477A0071608E /* 6f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 6f.json; path = "Harte-65x02/6502/v1/6f.json"; sourceTree = SOURCE_ROOT; };
+		8217A31D3043477A0071608E /* 07.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 07.json; path = "Harte-65x02/6502/v1/07.json"; sourceTree = SOURCE_ROOT; };
+		8217A31E3043477A0071608E /* 7a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 7a.json; path = "Harte-65x02/6502/v1/7a.json"; sourceTree = SOURCE_ROOT; };
+		8217A31F3043477A0071608E /* 7b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 7b.json; path = "Harte-65x02/6502/v1/7b.json"; sourceTree = SOURCE_ROOT; };
+		8217A3203043477A0071608E /* 7c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 7c.json; path = "Harte-65x02/6502/v1/7c.json"; sourceTree = SOURCE_ROOT; };
+		8217A3213043477A0071608E /* 7d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 7d.json; path = "Harte-65x02/6502/v1/7d.json"; sourceTree = SOURCE_ROOT; };
+		8217A3223043477A0071608E /* 7e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 7e.json; path = "Harte-65x02/6502/v1/7e.json"; sourceTree = SOURCE_ROOT; };
+		8217A3233043477A0071608E /* 7f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 7f.json; path = "Harte-65x02/6502/v1/7f.json"; sourceTree = SOURCE_ROOT; };
+		8217A3243043477A0071608E /* 08.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 08.json; path = "Harte-65x02/6502/v1/08.json"; sourceTree = SOURCE_ROOT; };
+		8217A3253043477A0071608E /* 8a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 8a.json; path = "Harte-65x02/6502/v1/8a.json"; sourceTree = SOURCE_ROOT; };
+		8217A3263043477A0071608E /* 8b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 8b.json; path = "Harte-65x02/6502/v1/8b.json"; sourceTree = SOURCE_ROOT; };
+		8217A3273043477A0071608E /* 8c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 8c.json; path = "Harte-65x02/6502/v1/8c.json"; sourceTree = SOURCE_ROOT; };
+		8217A3283043477A0071608E /* 8d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 8d.json; path = "Harte-65x02/6502/v1/8d.json"; sourceTree = SOURCE_ROOT; };
+		8217A3293043477A0071608E /* 8e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 8e.json; path = "Harte-65x02/6502/v1/8e.json"; sourceTree = SOURCE_ROOT; };
+		8217A32A3043477A0071608E /* 8f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 8f.json; path = "Harte-65x02/6502/v1/8f.json"; sourceTree = SOURCE_ROOT; };
+		8217A32B3043477A0071608E /* 09.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 09.json; path = "Harte-65x02/6502/v1/09.json"; sourceTree = SOURCE_ROOT; };
+		8217A32C3043477A0071608E /* 9a.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 9a.json; path = "Harte-65x02/6502/v1/9a.json"; sourceTree = SOURCE_ROOT; };
+		8217A32D3043477A0071608E /* 9b.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 9b.json; path = "Harte-65x02/6502/v1/9b.json"; sourceTree = SOURCE_ROOT; };
+		8217A32E3043477A0071608E /* 9c.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 9c.json; path = "Harte-65x02/6502/v1/9c.json"; sourceTree = SOURCE_ROOT; };
+		8217A32F3043477A0071608E /* 9d.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 9d.json; path = "Harte-65x02/6502/v1/9d.json"; sourceTree = SOURCE_ROOT; };
+		8217A3303043477A0071608E /* 9e.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 9e.json; path = "Harte-65x02/6502/v1/9e.json"; sourceTree = SOURCE_ROOT; };
+		8217A3313043477A0071608E /* 9f.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 9f.json; path = "Harte-65x02/6502/v1/9f.json"; sourceTree = SOURCE_ROOT; };
+		8217A3323043477A0071608E /* 10.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 10.json; path = "Harte-65x02/6502/v1/10.json"; sourceTree = SOURCE_ROOT; };
+		8217A3333043477A0071608E /* 11.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 11.json; path = "Harte-65x02/6502/v1/11.json"; sourceTree = SOURCE_ROOT; };
+		8217A3343043477A0071608E /* 12.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 12.json; path = "Harte-65x02/6502/v1/12.json"; sourceTree = SOURCE_ROOT; };
+		8217A3353043477A0071608E /* 13.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 13.json; path = "Harte-65x02/6502/v1/13.json"; sourceTree = SOURCE_ROOT; };
+		8217A3363043477A0071608E /* 14.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 14.json; path = "Harte-65x02/6502/v1/14.json"; sourceTree = SOURCE_ROOT; };
+		8217A3373043477A0071608E /* 15.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 15.json; path = "Harte-65x02/6502/v1/15.json"; sourceTree = SOURCE_ROOT; };
+		8217A3383043477A0071608E /* 16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 16.json; path = "Harte-65x02/6502/v1/16.json"; sourceTree = SOURCE_ROOT; };
+		8217A3393043477A0071608E /* 17.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 17.json; path = "Harte-65x02/6502/v1/17.json"; sourceTree = SOURCE_ROOT; };
+		8217A33A3043477A0071608E /* 18.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 18.json; path = "Harte-65x02/6502/v1/18.json"; sourceTree = SOURCE_ROOT; };
+		8217A33B3043477A0071608E /* 19.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 19.json; path = "Harte-65x02/6502/v1/19.json"; sourceTree = SOURCE_ROOT; };
+		8217A33C3043477A0071608E /* 20.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 20.json; path = "Harte-65x02/6502/v1/20.json"; sourceTree = SOURCE_ROOT; };
+		8217A33D3043477A0071608E /* 21.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 21.json; path = "Harte-65x02/6502/v1/21.json"; sourceTree = SOURCE_ROOT; };
+		8217A33E3043477A0071608E /* 22.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 22.json; path = "Harte-65x02/6502/v1/22.json"; sourceTree = SOURCE_ROOT; };
+		8217A33F3043477A0071608E /* 23.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 23.json; path = "Harte-65x02/6502/v1/23.json"; sourceTree = SOURCE_ROOT; };
+		8217A3403043477A0071608E /* 24.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 24.json; path = "Harte-65x02/6502/v1/24.json"; sourceTree = SOURCE_ROOT; };
+		8217A3413043477A0071608E /* 25.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 25.json; path = "Harte-65x02/6502/v1/25.json"; sourceTree = SOURCE_ROOT; };
+		8217A3423043477A0071608E /* 26.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 26.json; path = "Harte-65x02/6502/v1/26.json"; sourceTree = SOURCE_ROOT; };
+		8217A3433043477A0071608E /* 27.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 27.json; path = "Harte-65x02/6502/v1/27.json"; sourceTree = SOURCE_ROOT; };
+		8217A3443043477A0071608E /* 28.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 28.json; path = "Harte-65x02/6502/v1/28.json"; sourceTree = SOURCE_ROOT; };
+		8217A3453043477A0071608E /* 29.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 29.json; path = "Harte-65x02/6502/v1/29.json"; sourceTree = SOURCE_ROOT; };
+		8217A3463043477A0071608E /* 30.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 30.json; path = "Harte-65x02/6502/v1/30.json"; sourceTree = SOURCE_ROOT; };
+		8217A3473043477A0071608E /* 31.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 31.json; path = "Harte-65x02/6502/v1/31.json"; sourceTree = SOURCE_ROOT; };
+		8217A3483043477A0071608E /* 32.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 32.json; path = "Harte-65x02/6502/v1/32.json"; sourceTree = SOURCE_ROOT; };
+		8217A3493043477A0071608E /* 33.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 33.json; path = "Harte-65x02/6502/v1/33.json"; sourceTree = SOURCE_ROOT; };
+		8217A34A3043477A0071608E /* 34.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 34.json; path = "Harte-65x02/6502/v1/34.json"; sourceTree = SOURCE_ROOT; };
+		8217A34B3043477A0071608E /* 35.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 35.json; path = "Harte-65x02/6502/v1/35.json"; sourceTree = SOURCE_ROOT; };
+		8217A34C3043477A0071608E /* 36.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 36.json; path = "Harte-65x02/6502/v1/36.json"; sourceTree = SOURCE_ROOT; };
+		8217A34D3043477A0071608E /* 37.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 37.json; path = "Harte-65x02/6502/v1/37.json"; sourceTree = SOURCE_ROOT; };
+		8217A34E3043477A0071608E /* 38.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 38.json; path = "Harte-65x02/6502/v1/38.json"; sourceTree = SOURCE_ROOT; };
+		8217A34F3043477A0071608E /* 39.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 39.json; path = "Harte-65x02/6502/v1/39.json"; sourceTree = SOURCE_ROOT; };
+		8217A3503043477A0071608E /* 40.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 40.json; path = "Harte-65x02/6502/v1/40.json"; sourceTree = SOURCE_ROOT; };
+		8217A3513043477A0071608E /* 41.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 41.json; path = "Harte-65x02/6502/v1/41.json"; sourceTree = SOURCE_ROOT; };
+		8217A3523043477A0071608E /* 42.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 42.json; path = "Harte-65x02/6502/v1/42.json"; sourceTree = SOURCE_ROOT; };
+		8217A3533043477A0071608E /* 43.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 43.json; path = "Harte-65x02/6502/v1/43.json"; sourceTree = SOURCE_ROOT; };
+		8217A3543043477A0071608E /* 44.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 44.json; path = "Harte-65x02/6502/v1/44.json"; sourceTree = SOURCE_ROOT; };
+		8217A3553043477A0071608E /* 45.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 45.json; path = "Harte-65x02/6502/v1/45.json"; sourceTree = SOURCE_ROOT; };
+		8217A3563043477A0071608E /* 46.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 46.json; path = "Harte-65x02/6502/v1/46.json"; sourceTree = SOURCE_ROOT; };
+		8217A3573043477A0071608E /* 47.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 47.json; path = "Harte-65x02/6502/v1/47.json"; sourceTree = SOURCE_ROOT; };
+		8217A3583043477A0071608E /* 48.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 48.json; path = "Harte-65x02/6502/v1/48.json"; sourceTree = SOURCE_ROOT; };
+		8217A3593043477A0071608E /* 49.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 49.json; path = "Harte-65x02/6502/v1/49.json"; sourceTree = SOURCE_ROOT; };
+		8217A35A3043477A0071608E /* 50.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 50.json; path = "Harte-65x02/6502/v1/50.json"; sourceTree = SOURCE_ROOT; };
+		8217A35B3043477A0071608E /* 51.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 51.json; path = "Harte-65x02/6502/v1/51.json"; sourceTree = SOURCE_ROOT; };
+		8217A35C3043477A0071608E /* 52.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 52.json; path = "Harte-65x02/6502/v1/52.json"; sourceTree = SOURCE_ROOT; };
+		8217A35D3043477A0071608E /* 53.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 53.json; path = "Harte-65x02/6502/v1/53.json"; sourceTree = SOURCE_ROOT; };
+		8217A35E3043477A0071608E /* 54.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 54.json; path = "Harte-65x02/6502/v1/54.json"; sourceTree = SOURCE_ROOT; };
+		8217A35F3043477A0071608E /* 55.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 55.json; path = "Harte-65x02/6502/v1/55.json"; sourceTree = SOURCE_ROOT; };
+		8217A3603043477A0071608E /* 56.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 56.json; path = "Harte-65x02/6502/v1/56.json"; sourceTree = SOURCE_ROOT; };
+		8217A3613043477A0071608E /* 57.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 57.json; path = "Harte-65x02/6502/v1/57.json"; sourceTree = SOURCE_ROOT; };
+		8217A3623043477A0071608E /* 58.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 58.json; path = "Harte-65x02/6502/v1/58.json"; sourceTree = SOURCE_ROOT; };
+		8217A3633043477A0071608E /* 59.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 59.json; path = "Harte-65x02/6502/v1/59.json"; sourceTree = SOURCE_ROOT; };
+		8217A3643043477A0071608E /* 60.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 60.json; path = "Harte-65x02/6502/v1/60.json"; sourceTree = SOURCE_ROOT; };
+		8217A3653043477A0071608E /* 61.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 61.json; path = "Harte-65x02/6502/v1/61.json"; sourceTree = SOURCE_ROOT; };
+		8217A3663043477A0071608E /* 62.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 62.json; path = "Harte-65x02/6502/v1/62.json"; sourceTree = SOURCE_ROOT; };
+		8217A3673043477A0071608E /* 63.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 63.json; path = "Harte-65x02/6502/v1/63.json"; sourceTree = SOURCE_ROOT; };
+		8217A3683043477A0071608E /* 64.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 64.json; path = "Harte-65x02/6502/v1/64.json"; sourceTree = SOURCE_ROOT; };
+		8217A3693043477A0071608E /* 65.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 65.json; path = "Harte-65x02/6502/v1/65.json"; sourceTree = SOURCE_ROOT; };
+		8217A36A3043477A0071608E /* 66.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 66.json; path = "Harte-65x02/6502/v1/66.json"; sourceTree = SOURCE_ROOT; };
+		8217A36B3043477A0071608E /* 67.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 67.json; path = "Harte-65x02/6502/v1/67.json"; sourceTree = SOURCE_ROOT; };
+		8217A36C3043477A0071608E /* 68.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 68.json; path = "Harte-65x02/6502/v1/68.json"; sourceTree = SOURCE_ROOT; };
+		8217A36D3043477A0071608E /* 69.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 69.json; path = "Harte-65x02/6502/v1/69.json"; sourceTree = SOURCE_ROOT; };
+		8217A36E3043477A0071608E /* 70.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 70.json; path = "Harte-65x02/6502/v1/70.json"; sourceTree = SOURCE_ROOT; };
+		8217A36F3043477A0071608E /* 71.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 71.json; path = "Harte-65x02/6502/v1/71.json"; sourceTree = SOURCE_ROOT; };
+		8217A3703043477A0071608E /* 72.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 72.json; path = "Harte-65x02/6502/v1/72.json"; sourceTree = SOURCE_ROOT; };
+		8217A3713043477A0071608E /* 73.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 73.json; path = "Harte-65x02/6502/v1/73.json"; sourceTree = SOURCE_ROOT; };
+		8217A3723043477A0071608E /* 74.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 74.json; path = "Harte-65x02/6502/v1/74.json"; sourceTree = SOURCE_ROOT; };
+		8217A3733043477A0071608E /* 75.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 75.json; path = "Harte-65x02/6502/v1/75.json"; sourceTree = SOURCE_ROOT; };
+		8217A3743043477A0071608E /* 76.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 76.json; path = "Harte-65x02/6502/v1/76.json"; sourceTree = SOURCE_ROOT; };
+		8217A3753043477A0071608E /* 77.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 77.json; path = "Harte-65x02/6502/v1/77.json"; sourceTree = SOURCE_ROOT; };
+		8217A3763043477A0071608E /* 78.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 78.json; path = "Harte-65x02/6502/v1/78.json"; sourceTree = SOURCE_ROOT; };
+		8217A3773043477A0071608E /* 79.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 79.json; path = "Harte-65x02/6502/v1/79.json"; sourceTree = SOURCE_ROOT; };
+		8217A3783043477A0071608E /* 80.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 80.json; path = "Harte-65x02/6502/v1/80.json"; sourceTree = SOURCE_ROOT; };
+		8217A3793043477A0071608E /* 81.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 81.json; path = "Harte-65x02/6502/v1/81.json"; sourceTree = SOURCE_ROOT; };
+		8217A37A3043477A0071608E /* 82.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 82.json; path = "Harte-65x02/6502/v1/82.json"; sourceTree = SOURCE_ROOT; };
+		8217A37B3043477A0071608E /* 83.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 83.json; path = "Harte-65x02/6502/v1/83.json"; sourceTree = SOURCE_ROOT; };
+		8217A37C3043477A0071608E /* 84.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 84.json; path = "Harte-65x02/6502/v1/84.json"; sourceTree = SOURCE_ROOT; };
+		8217A37D3043477A0071608E /* 85.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 85.json; path = "Harte-65x02/6502/v1/85.json"; sourceTree = SOURCE_ROOT; };
+		8217A37E3043477A0071608E /* 86.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 86.json; path = "Harte-65x02/6502/v1/86.json"; sourceTree = SOURCE_ROOT; };
+		8217A37F3043477A0071608E /* 87.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 87.json; path = "Harte-65x02/6502/v1/87.json"; sourceTree = SOURCE_ROOT; };
+		8217A3803043477A0071608E /* 88.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 88.json; path = "Harte-65x02/6502/v1/88.json"; sourceTree = SOURCE_ROOT; };
+		8217A3813043477A0071608E /* 89.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 89.json; path = "Harte-65x02/6502/v1/89.json"; sourceTree = SOURCE_ROOT; };
+		8217A3823043477A0071608E /* 90.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 90.json; path = "Harte-65x02/6502/v1/90.json"; sourceTree = SOURCE_ROOT; };
+		8217A3833043477A0071608E /* 91.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 91.json; path = "Harte-65x02/6502/v1/91.json"; sourceTree = SOURCE_ROOT; };
+		8217A3843043477A0071608E /* 92.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 92.json; path = "Harte-65x02/6502/v1/92.json"; sourceTree = SOURCE_ROOT; };
+		8217A3853043477A0071608E /* 93.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 93.json; path = "Harte-65x02/6502/v1/93.json"; sourceTree = SOURCE_ROOT; };
+		8217A3863043477A0071608E /* 94.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 94.json; path = "Harte-65x02/6502/v1/94.json"; sourceTree = SOURCE_ROOT; };
+		8217A3873043477A0071608E /* 95.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 95.json; path = "Harte-65x02/6502/v1/95.json"; sourceTree = SOURCE_ROOT; };
+		8217A3883043477A0071608E /* 96.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 96.json; path = "Harte-65x02/6502/v1/96.json"; sourceTree = SOURCE_ROOT; };
+		8217A3893043477A0071608E /* 97.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 97.json; path = "Harte-65x02/6502/v1/97.json"; sourceTree = SOURCE_ROOT; };
+		8217A38A3043477A0071608E /* 98.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 98.json; path = "Harte-65x02/6502/v1/98.json"; sourceTree = SOURCE_ROOT; };
+		8217A38B3043477A0071608E /* 99.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = 99.json; path = "Harte-65x02/6502/v1/99.json"; sourceTree = SOURCE_ROOT; };
+		8217A38C3043477A0071608E /* a0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a0.json; path = "Harte-65x02/6502/v1/a0.json"; sourceTree = SOURCE_ROOT; };
+		8217A38D3043477A0071608E /* a1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a1.json; path = "Harte-65x02/6502/v1/a1.json"; sourceTree = SOURCE_ROOT; };
+		8217A38E3043477A0071608E /* a2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a2.json; path = "Harte-65x02/6502/v1/a2.json"; sourceTree = SOURCE_ROOT; };
+		8217A38F3043477A0071608E /* a3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a3.json; path = "Harte-65x02/6502/v1/a3.json"; sourceTree = SOURCE_ROOT; };
+		8217A3903043477A0071608E /* a4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a4.json; path = "Harte-65x02/6502/v1/a4.json"; sourceTree = SOURCE_ROOT; };
+		8217A3913043477A0071608E /* a5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a5.json; path = "Harte-65x02/6502/v1/a5.json"; sourceTree = SOURCE_ROOT; };
+		8217A3923043477A0071608E /* a6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a6.json; path = "Harte-65x02/6502/v1/a6.json"; sourceTree = SOURCE_ROOT; };
+		8217A3933043477A0071608E /* a7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a7.json; path = "Harte-65x02/6502/v1/a7.json"; sourceTree = SOURCE_ROOT; };
+		8217A3943043477A0071608E /* a8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a8.json; path = "Harte-65x02/6502/v1/a8.json"; sourceTree = SOURCE_ROOT; };
+		8217A3953043477A0071608E /* a9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = a9.json; path = "Harte-65x02/6502/v1/a9.json"; sourceTree = SOURCE_ROOT; };
+		8217A3963043477A0071608E /* aa.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = aa.json; path = "Harte-65x02/6502/v1/aa.json"; sourceTree = SOURCE_ROOT; };
+		8217A3973043477A0071608E /* ab.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ab.json; path = "Harte-65x02/6502/v1/ab.json"; sourceTree = SOURCE_ROOT; };
+		8217A3983043477A0071608E /* ac.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ac.json; path = "Harte-65x02/6502/v1/ac.json"; sourceTree = SOURCE_ROOT; };
+		8217A3993043477A0071608E /* ad.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ad.json; path = "Harte-65x02/6502/v1/ad.json"; sourceTree = SOURCE_ROOT; };
+		8217A39A3043477A0071608E /* ae.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ae.json; path = "Harte-65x02/6502/v1/ae.json"; sourceTree = SOURCE_ROOT; };
+		8217A39B3043477A0071608E /* af.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = af.json; path = "Harte-65x02/6502/v1/af.json"; sourceTree = SOURCE_ROOT; };
+		8217A39C3043477A0071608E /* b0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b0.json; path = "Harte-65x02/6502/v1/b0.json"; sourceTree = SOURCE_ROOT; };
+		8217A39D3043477A0071608E /* b1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b1.json; path = "Harte-65x02/6502/v1/b1.json"; sourceTree = SOURCE_ROOT; };
+		8217A39E3043477A0071608E /* b2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b2.json; path = "Harte-65x02/6502/v1/b2.json"; sourceTree = SOURCE_ROOT; };
+		8217A39F3043477A0071608E /* b3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b3.json; path = "Harte-65x02/6502/v1/b3.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A03043477A0071608E /* b4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b4.json; path = "Harte-65x02/6502/v1/b4.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A13043477A0071608E /* b5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b5.json; path = "Harte-65x02/6502/v1/b5.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A23043477A0071608E /* b6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b6.json; path = "Harte-65x02/6502/v1/b6.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A33043477A0071608E /* b7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b7.json; path = "Harte-65x02/6502/v1/b7.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A43043477A0071608E /* b8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b8.json; path = "Harte-65x02/6502/v1/b8.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A53043477A0071608E /* b9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = b9.json; path = "Harte-65x02/6502/v1/b9.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A63043477A0071608E /* ba.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ba.json; path = "Harte-65x02/6502/v1/ba.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A73043477A0071608E /* bb.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = bb.json; path = "Harte-65x02/6502/v1/bb.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A83043477A0071608E /* bc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = bc.json; path = "Harte-65x02/6502/v1/bc.json"; sourceTree = SOURCE_ROOT; };
+		8217A3A93043477A0071608E /* bd.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = bd.json; path = "Harte-65x02/6502/v1/bd.json"; sourceTree = SOURCE_ROOT; };
+		8217A3AA3043477A0071608E /* be.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = be.json; path = "Harte-65x02/6502/v1/be.json"; sourceTree = SOURCE_ROOT; };
+		8217A3AB3043477A0071608E /* bf.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = bf.json; path = "Harte-65x02/6502/v1/bf.json"; sourceTree = SOURCE_ROOT; };
+		8217A3AC3043477A0071608E /* c0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c0.json; path = "Harte-65x02/6502/v1/c0.json"; sourceTree = SOURCE_ROOT; };
+		8217A3AD3043477A0071608E /* c1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c1.json; path = "Harte-65x02/6502/v1/c1.json"; sourceTree = SOURCE_ROOT; };
+		8217A3AE3043477A0071608E /* c2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c2.json; path = "Harte-65x02/6502/v1/c2.json"; sourceTree = SOURCE_ROOT; };
+		8217A3AF3043477A0071608E /* c3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c3.json; path = "Harte-65x02/6502/v1/c3.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B03043477A0071608E /* c4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c4.json; path = "Harte-65x02/6502/v1/c4.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B13043477A0071608E /* c5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c5.json; path = "Harte-65x02/6502/v1/c5.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B23043477A0071608E /* c6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c6.json; path = "Harte-65x02/6502/v1/c6.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B33043477A0071608E /* c7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c7.json; path = "Harte-65x02/6502/v1/c7.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B43043477A0071608E /* c8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c8.json; path = "Harte-65x02/6502/v1/c8.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B53043477A0071608E /* c9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = c9.json; path = "Harte-65x02/6502/v1/c9.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B63043477A0071608E /* ca.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ca.json; path = "Harte-65x02/6502/v1/ca.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B73043477A0071608E /* cb.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = cb.json; path = "Harte-65x02/6502/v1/cb.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B83043477A0071608E /* cc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = cc.json; path = "Harte-65x02/6502/v1/cc.json"; sourceTree = SOURCE_ROOT; };
+		8217A3B93043477A0071608E /* cd.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = cd.json; path = "Harte-65x02/6502/v1/cd.json"; sourceTree = SOURCE_ROOT; };
+		8217A3BA3043477A0071608E /* ce.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ce.json; path = "Harte-65x02/6502/v1/ce.json"; sourceTree = SOURCE_ROOT; };
+		8217A3BB3043477A0071608E /* cf.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = cf.json; path = "Harte-65x02/6502/v1/cf.json"; sourceTree = SOURCE_ROOT; };
+		8217A3BC3043477A0071608E /* d0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d0.json; path = "Harte-65x02/6502/v1/d0.json"; sourceTree = SOURCE_ROOT; };
+		8217A3BD3043477A0071608E /* d1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d1.json; path = "Harte-65x02/6502/v1/d1.json"; sourceTree = SOURCE_ROOT; };
+		8217A3BE3043477A0071608E /* d2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d2.json; path = "Harte-65x02/6502/v1/d2.json"; sourceTree = SOURCE_ROOT; };
+		8217A3BF3043477A0071608E /* d3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d3.json; path = "Harte-65x02/6502/v1/d3.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C03043477A0071608E /* d4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d4.json; path = "Harte-65x02/6502/v1/d4.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C13043477A0071608E /* d5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d5.json; path = "Harte-65x02/6502/v1/d5.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C23043477A0071608E /* d6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d6.json; path = "Harte-65x02/6502/v1/d6.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C33043477A0071608E /* d7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d7.json; path = "Harte-65x02/6502/v1/d7.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C43043477A0071608E /* d8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d8.json; path = "Harte-65x02/6502/v1/d8.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C53043477A0071608E /* d9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = d9.json; path = "Harte-65x02/6502/v1/d9.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C63043477A0071608E /* da.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = da.json; path = "Harte-65x02/6502/v1/da.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C73043477A0071608E /* db.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = db.json; path = "Harte-65x02/6502/v1/db.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C83043477A0071608E /* dc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = dc.json; path = "Harte-65x02/6502/v1/dc.json"; sourceTree = SOURCE_ROOT; };
+		8217A3C93043477A0071608E /* dd.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = dd.json; path = "Harte-65x02/6502/v1/dd.json"; sourceTree = SOURCE_ROOT; };
+		8217A3CA3043477A0071608E /* de.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = de.json; path = "Harte-65x02/6502/v1/de.json"; sourceTree = SOURCE_ROOT; };
+		8217A3CB3043477A0071608E /* df.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = df.json; path = "Harte-65x02/6502/v1/df.json"; sourceTree = SOURCE_ROOT; };
+		8217A3CC3043477A0071608E /* e0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e0.json; path = "Harte-65x02/6502/v1/e0.json"; sourceTree = SOURCE_ROOT; };
+		8217A3CD3043477A0071608E /* e1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e1.json; path = "Harte-65x02/6502/v1/e1.json"; sourceTree = SOURCE_ROOT; };
+		8217A3CE3043477A0071608E /* e2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e2.json; path = "Harte-65x02/6502/v1/e2.json"; sourceTree = SOURCE_ROOT; };
+		8217A3CF3043477A0071608E /* e3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e3.json; path = "Harte-65x02/6502/v1/e3.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D03043477A0071608E /* e4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e4.json; path = "Harte-65x02/6502/v1/e4.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D13043477A0071608E /* e5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e5.json; path = "Harte-65x02/6502/v1/e5.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D23043477A0071608E /* e6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e6.json; path = "Harte-65x02/6502/v1/e6.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D33043477A0071608E /* e7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e7.json; path = "Harte-65x02/6502/v1/e7.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D43043477A0071608E /* e8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e8.json; path = "Harte-65x02/6502/v1/e8.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D53043477A0071608E /* e9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = e9.json; path = "Harte-65x02/6502/v1/e9.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D63043477A0071608E /* ea.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ea.json; path = "Harte-65x02/6502/v1/ea.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D73043477A0071608E /* eb.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = eb.json; path = "Harte-65x02/6502/v1/eb.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D83043477A0071608E /* ec.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ec.json; path = "Harte-65x02/6502/v1/ec.json"; sourceTree = SOURCE_ROOT; };
+		8217A3D93043477A0071608E /* ed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ed.json; path = "Harte-65x02/6502/v1/ed.json"; sourceTree = SOURCE_ROOT; };
+		8217A3DA3043477A0071608E /* ee.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ee.json; path = "Harte-65x02/6502/v1/ee.json"; sourceTree = SOURCE_ROOT; };
+		8217A3DB3043477A0071608E /* ef.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ef.json; path = "Harte-65x02/6502/v1/ef.json"; sourceTree = SOURCE_ROOT; };
+		8217A3DC3043477A0071608E /* f0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f0.json; path = "Harte-65x02/6502/v1/f0.json"; sourceTree = SOURCE_ROOT; };
+		8217A3DD3043477A0071608E /* f1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f1.json; path = "Harte-65x02/6502/v1/f1.json"; sourceTree = SOURCE_ROOT; };
+		8217A3DE3043477A0071608E /* f2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f2.json; path = "Harte-65x02/6502/v1/f2.json"; sourceTree = SOURCE_ROOT; };
+		8217A3DF3043477A0071608E /* f3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f3.json; path = "Harte-65x02/6502/v1/f3.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E03043477A0071608E /* f4.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f4.json; path = "Harte-65x02/6502/v1/f4.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E13043477A0071608E /* f5.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f5.json; path = "Harte-65x02/6502/v1/f5.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E23043477A0071608E /* f6.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f6.json; path = "Harte-65x02/6502/v1/f6.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E33043477A0071608E /* f7.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f7.json; path = "Harte-65x02/6502/v1/f7.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E43043477A0071608E /* f8.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f8.json; path = "Harte-65x02/6502/v1/f8.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E53043477A0071608E /* f9.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = f9.json; path = "Harte-65x02/6502/v1/f9.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E63043477A0071608E /* fa.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fa.json; path = "Harte-65x02/6502/v1/fa.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E73043477A0071608E /* fb.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fb.json; path = "Harte-65x02/6502/v1/fb.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E83043477A0071608E /* fc.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fc.json; path = "Harte-65x02/6502/v1/fc.json"; sourceTree = SOURCE_ROOT; };
+		8217A3E93043477A0071608E /* fd.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fd.json; path = "Harte-65x02/6502/v1/fd.json"; sourceTree = SOURCE_ROOT; };
+		8217A3EA3043477A0071608E /* fe.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = fe.json; path = "Harte-65x02/6502/v1/fe.json"; sourceTree = SOURCE_ROOT; };
+		8217A3EB3043477A0071608E /* ff.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = ff.json; path = "Harte-65x02/6502/v1/ff.json"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +902,7 @@
 		8217A1BB3042F7DC0071608E /* tests */ = {
 			isa = PBXGroup;
 			children = (
+				8217A2EB304347590071608E /* Harte-65x02 */,
 				8217A1E530433E2E0071608E /* run_harte.cpp */,
 				8217A1BD3042F88F0071608E /* 6502_functional_test.bin */,
 				8217A1D730433A7E0071608E /* run_klaus.cpp */,
@@ -152,6 +919,270 @@
 			);
 			path = tools;
 			sourceTree = "<group>";
+		};
+		8217A2EB304347590071608E /* Harte-65x02 */ = {
+			isa = PBXGroup;
+			children = (
+				8217A2EC3043477A0071608E /* 00.json */,
+				8217A2ED3043477A0071608E /* 0a.json */,
+				8217A2EE3043477A0071608E /* 0b.json */,
+				8217A2EF3043477A0071608E /* 0c.json */,
+				8217A2F03043477A0071608E /* 0d.json */,
+				8217A2F13043477A0071608E /* 0e.json */,
+				8217A2F23043477A0071608E /* 0f.json */,
+				8217A2F33043477A0071608E /* 01.json */,
+				8217A2F43043477A0071608E /* 1a.json */,
+				8217A2F53043477A0071608E /* 1b.json */,
+				8217A2F63043477A0071608E /* 1c.json */,
+				8217A2F73043477A0071608E /* 1d.json */,
+				8217A2F83043477A0071608E /* 1e.json */,
+				8217A2F93043477A0071608E /* 1f.json */,
+				8217A2FA3043477A0071608E /* 02.json */,
+				8217A2FB3043477A0071608E /* 2a.json */,
+				8217A2FC3043477A0071608E /* 2b.json */,
+				8217A2FD3043477A0071608E /* 2c.json */,
+				8217A2FE3043477A0071608E /* 2d.json */,
+				8217A2FF3043477A0071608E /* 2e.json */,
+				8217A3003043477A0071608E /* 2f.json */,
+				8217A3013043477A0071608E /* 03.json */,
+				8217A3023043477A0071608E /* 3a.json */,
+				8217A3033043477A0071608E /* 3b.json */,
+				8217A3043043477A0071608E /* 3c.json */,
+				8217A3053043477A0071608E /* 3d.json */,
+				8217A3063043477A0071608E /* 3e.json */,
+				8217A3073043477A0071608E /* 3f.json */,
+				8217A3083043477A0071608E /* 04.json */,
+				8217A3093043477A0071608E /* 4a.json */,
+				8217A30A3043477A0071608E /* 4b.json */,
+				8217A30B3043477A0071608E /* 4c.json */,
+				8217A30C3043477A0071608E /* 4d.json */,
+				8217A30D3043477A0071608E /* 4e.json */,
+				8217A30E3043477A0071608E /* 4f.json */,
+				8217A30F3043477A0071608E /* 05.json */,
+				8217A3103043477A0071608E /* 5a.json */,
+				8217A3113043477A0071608E /* 5b.json */,
+				8217A3123043477A0071608E /* 5c.json */,
+				8217A3133043477A0071608E /* 5d.json */,
+				8217A3143043477A0071608E /* 5e.json */,
+				8217A3153043477A0071608E /* 5f.json */,
+				8217A3163043477A0071608E /* 06.json */,
+				8217A3173043477A0071608E /* 6a.json */,
+				8217A3183043477A0071608E /* 6b.json */,
+				8217A3193043477A0071608E /* 6c.json */,
+				8217A31A3043477A0071608E /* 6d.json */,
+				8217A31B3043477A0071608E /* 6e.json */,
+				8217A31C3043477A0071608E /* 6f.json */,
+				8217A31D3043477A0071608E /* 07.json */,
+				8217A31E3043477A0071608E /* 7a.json */,
+				8217A31F3043477A0071608E /* 7b.json */,
+				8217A3203043477A0071608E /* 7c.json */,
+				8217A3213043477A0071608E /* 7d.json */,
+				8217A3223043477A0071608E /* 7e.json */,
+				8217A3233043477A0071608E /* 7f.json */,
+				8217A3243043477A0071608E /* 08.json */,
+				8217A3253043477A0071608E /* 8a.json */,
+				8217A3263043477A0071608E /* 8b.json */,
+				8217A3273043477A0071608E /* 8c.json */,
+				8217A3283043477A0071608E /* 8d.json */,
+				8217A3293043477A0071608E /* 8e.json */,
+				8217A32A3043477A0071608E /* 8f.json */,
+				8217A32B3043477A0071608E /* 09.json */,
+				8217A32C3043477A0071608E /* 9a.json */,
+				8217A32D3043477A0071608E /* 9b.json */,
+				8217A32E3043477A0071608E /* 9c.json */,
+				8217A32F3043477A0071608E /* 9d.json */,
+				8217A3303043477A0071608E /* 9e.json */,
+				8217A3313043477A0071608E /* 9f.json */,
+				8217A3323043477A0071608E /* 10.json */,
+				8217A3333043477A0071608E /* 11.json */,
+				8217A3343043477A0071608E /* 12.json */,
+				8217A3353043477A0071608E /* 13.json */,
+				8217A3363043477A0071608E /* 14.json */,
+				8217A3373043477A0071608E /* 15.json */,
+				8217A3383043477A0071608E /* 16.json */,
+				8217A3393043477A0071608E /* 17.json */,
+				8217A33A3043477A0071608E /* 18.json */,
+				8217A33B3043477A0071608E /* 19.json */,
+				8217A33C3043477A0071608E /* 20.json */,
+				8217A33D3043477A0071608E /* 21.json */,
+				8217A33E3043477A0071608E /* 22.json */,
+				8217A33F3043477A0071608E /* 23.json */,
+				8217A3403043477A0071608E /* 24.json */,
+				8217A3413043477A0071608E /* 25.json */,
+				8217A3423043477A0071608E /* 26.json */,
+				8217A3433043477A0071608E /* 27.json */,
+				8217A3443043477A0071608E /* 28.json */,
+				8217A3453043477A0071608E /* 29.json */,
+				8217A3463043477A0071608E /* 30.json */,
+				8217A3473043477A0071608E /* 31.json */,
+				8217A3483043477A0071608E /* 32.json */,
+				8217A3493043477A0071608E /* 33.json */,
+				8217A34A3043477A0071608E /* 34.json */,
+				8217A34B3043477A0071608E /* 35.json */,
+				8217A34C3043477A0071608E /* 36.json */,
+				8217A34D3043477A0071608E /* 37.json */,
+				8217A34E3043477A0071608E /* 38.json */,
+				8217A34F3043477A0071608E /* 39.json */,
+				8217A3503043477A0071608E /* 40.json */,
+				8217A3513043477A0071608E /* 41.json */,
+				8217A3523043477A0071608E /* 42.json */,
+				8217A3533043477A0071608E /* 43.json */,
+				8217A3543043477A0071608E /* 44.json */,
+				8217A3553043477A0071608E /* 45.json */,
+				8217A3563043477A0071608E /* 46.json */,
+				8217A3573043477A0071608E /* 47.json */,
+				8217A3583043477A0071608E /* 48.json */,
+				8217A3593043477A0071608E /* 49.json */,
+				8217A35A3043477A0071608E /* 50.json */,
+				8217A35B3043477A0071608E /* 51.json */,
+				8217A35C3043477A0071608E /* 52.json */,
+				8217A35D3043477A0071608E /* 53.json */,
+				8217A35E3043477A0071608E /* 54.json */,
+				8217A35F3043477A0071608E /* 55.json */,
+				8217A3603043477A0071608E /* 56.json */,
+				8217A3613043477A0071608E /* 57.json */,
+				8217A3623043477A0071608E /* 58.json */,
+				8217A3633043477A0071608E /* 59.json */,
+				8217A3643043477A0071608E /* 60.json */,
+				8217A3653043477A0071608E /* 61.json */,
+				8217A3663043477A0071608E /* 62.json */,
+				8217A3673043477A0071608E /* 63.json */,
+				8217A3683043477A0071608E /* 64.json */,
+				8217A3693043477A0071608E /* 65.json */,
+				8217A36A3043477A0071608E /* 66.json */,
+				8217A36B3043477A0071608E /* 67.json */,
+				8217A36C3043477A0071608E /* 68.json */,
+				8217A36D3043477A0071608E /* 69.json */,
+				8217A36E3043477A0071608E /* 70.json */,
+				8217A36F3043477A0071608E /* 71.json */,
+				8217A3703043477A0071608E /* 72.json */,
+				8217A3713043477A0071608E /* 73.json */,
+				8217A3723043477A0071608E /* 74.json */,
+				8217A3733043477A0071608E /* 75.json */,
+				8217A3743043477A0071608E /* 76.json */,
+				8217A3753043477A0071608E /* 77.json */,
+				8217A3763043477A0071608E /* 78.json */,
+				8217A3773043477A0071608E /* 79.json */,
+				8217A3783043477A0071608E /* 80.json */,
+				8217A3793043477A0071608E /* 81.json */,
+				8217A37A3043477A0071608E /* 82.json */,
+				8217A37B3043477A0071608E /* 83.json */,
+				8217A37C3043477A0071608E /* 84.json */,
+				8217A37D3043477A0071608E /* 85.json */,
+				8217A37E3043477A0071608E /* 86.json */,
+				8217A37F3043477A0071608E /* 87.json */,
+				8217A3803043477A0071608E /* 88.json */,
+				8217A3813043477A0071608E /* 89.json */,
+				8217A3823043477A0071608E /* 90.json */,
+				8217A3833043477A0071608E /* 91.json */,
+				8217A3843043477A0071608E /* 92.json */,
+				8217A3853043477A0071608E /* 93.json */,
+				8217A3863043477A0071608E /* 94.json */,
+				8217A3873043477A0071608E /* 95.json */,
+				8217A3883043477A0071608E /* 96.json */,
+				8217A3893043477A0071608E /* 97.json */,
+				8217A38A3043477A0071608E /* 98.json */,
+				8217A38B3043477A0071608E /* 99.json */,
+				8217A38C3043477A0071608E /* a0.json */,
+				8217A38D3043477A0071608E /* a1.json */,
+				8217A38E3043477A0071608E /* a2.json */,
+				8217A38F3043477A0071608E /* a3.json */,
+				8217A3903043477A0071608E /* a4.json */,
+				8217A3913043477A0071608E /* a5.json */,
+				8217A3923043477A0071608E /* a6.json */,
+				8217A3933043477A0071608E /* a7.json */,
+				8217A3943043477A0071608E /* a8.json */,
+				8217A3953043477A0071608E /* a9.json */,
+				8217A3963043477A0071608E /* aa.json */,
+				8217A3973043477A0071608E /* ab.json */,
+				8217A3983043477A0071608E /* ac.json */,
+				8217A3993043477A0071608E /* ad.json */,
+				8217A39A3043477A0071608E /* ae.json */,
+				8217A39B3043477A0071608E /* af.json */,
+				8217A39C3043477A0071608E /* b0.json */,
+				8217A39D3043477A0071608E /* b1.json */,
+				8217A39E3043477A0071608E /* b2.json */,
+				8217A39F3043477A0071608E /* b3.json */,
+				8217A3A03043477A0071608E /* b4.json */,
+				8217A3A13043477A0071608E /* b5.json */,
+				8217A3A23043477A0071608E /* b6.json */,
+				8217A3A33043477A0071608E /* b7.json */,
+				8217A3A43043477A0071608E /* b8.json */,
+				8217A3A53043477A0071608E /* b9.json */,
+				8217A3A63043477A0071608E /* ba.json */,
+				8217A3A73043477A0071608E /* bb.json */,
+				8217A3A83043477A0071608E /* bc.json */,
+				8217A3A93043477A0071608E /* bd.json */,
+				8217A3AA3043477A0071608E /* be.json */,
+				8217A3AB3043477A0071608E /* bf.json */,
+				8217A3AC3043477A0071608E /* c0.json */,
+				8217A3AD3043477A0071608E /* c1.json */,
+				8217A3AE3043477A0071608E /* c2.json */,
+				8217A3AF3043477A0071608E /* c3.json */,
+				8217A3B03043477A0071608E /* c4.json */,
+				8217A3B13043477A0071608E /* c5.json */,
+				8217A3B23043477A0071608E /* c6.json */,
+				8217A3B33043477A0071608E /* c7.json */,
+				8217A3B43043477A0071608E /* c8.json */,
+				8217A3B53043477A0071608E /* c9.json */,
+				8217A3B63043477A0071608E /* ca.json */,
+				8217A3B73043477A0071608E /* cb.json */,
+				8217A3B83043477A0071608E /* cc.json */,
+				8217A3B93043477A0071608E /* cd.json */,
+				8217A3BA3043477A0071608E /* ce.json */,
+				8217A3BB3043477A0071608E /* cf.json */,
+				8217A3BC3043477A0071608E /* d0.json */,
+				8217A3BD3043477A0071608E /* d1.json */,
+				8217A3BE3043477A0071608E /* d2.json */,
+				8217A3BF3043477A0071608E /* d3.json */,
+				8217A3C03043477A0071608E /* d4.json */,
+				8217A3C13043477A0071608E /* d5.json */,
+				8217A3C23043477A0071608E /* d6.json */,
+				8217A3C33043477A0071608E /* d7.json */,
+				8217A3C43043477A0071608E /* d8.json */,
+				8217A3C53043477A0071608E /* d9.json */,
+				8217A3C63043477A0071608E /* da.json */,
+				8217A3C73043477A0071608E /* db.json */,
+				8217A3C83043477A0071608E /* dc.json */,
+				8217A3C93043477A0071608E /* dd.json */,
+				8217A3CA3043477A0071608E /* de.json */,
+				8217A3CB3043477A0071608E /* df.json */,
+				8217A3CC3043477A0071608E /* e0.json */,
+				8217A3CD3043477A0071608E /* e1.json */,
+				8217A3CE3043477A0071608E /* e2.json */,
+				8217A3CF3043477A0071608E /* e3.json */,
+				8217A3D03043477A0071608E /* e4.json */,
+				8217A3D13043477A0071608E /* e5.json */,
+				8217A3D23043477A0071608E /* e6.json */,
+				8217A3D33043477A0071608E /* e7.json */,
+				8217A3D43043477A0071608E /* e8.json */,
+				8217A3D53043477A0071608E /* e9.json */,
+				8217A3D63043477A0071608E /* ea.json */,
+				8217A3D73043477A0071608E /* eb.json */,
+				8217A3D83043477A0071608E /* ec.json */,
+				8217A3D93043477A0071608E /* ed.json */,
+				8217A3DA3043477A0071608E /* ee.json */,
+				8217A3DB3043477A0071608E /* ef.json */,
+				8217A3DC3043477A0071608E /* f0.json */,
+				8217A3DD3043477A0071608E /* f1.json */,
+				8217A3DE3043477A0071608E /* f2.json */,
+				8217A3DF3043477A0071608E /* f3.json */,
+				8217A3E03043477A0071608E /* f4.json */,
+				8217A3E13043477A0071608E /* f5.json */,
+				8217A3E23043477A0071608E /* f6.json */,
+				8217A3E33043477A0071608E /* f7.json */,
+				8217A3E43043477A0071608E /* f8.json */,
+				8217A3E53043477A0071608E /* f9.json */,
+				8217A3E63043477A0071608E /* fa.json */,
+				8217A3E73043477A0071608E /* fb.json */,
+				8217A3E83043477A0071608E /* fc.json */,
+				8217A3E93043477A0071608E /* fd.json */,
+				8217A3EA3043477A0071608E /* fe.json */,
+				8217A3EB3043477A0071608E /* ff.json */,
+			);
+			name = "Harte-65x02";
+			path = "tests/Harte-65x02";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
