@@ -6,17 +6,28 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8217A1BC3042F7DC0071608E /* test_cpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8217A1BA3042F7DC0071608E /* test_cpu.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* MyTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		8217A1A93042F74D0071608E /* addressing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = addressing.hpp; sourceTree = "<group>"; };
+		8217A1AA3042F74D0071608E /* bus.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bus.hpp; sourceTree = "<group>"; };
+		8217A1AB3042F74D0071608E /* cpu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cpu.hpp; sourceTree = "<group>"; };
+		8217A1AC3042F74D0071608E /* disassembler.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = disassembler.hpp; sourceTree = "<group>"; };
+		8217A1AD3042F74D0071608E /* hooks.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = hooks.hpp; sourceTree = "<group>"; };
+		8217A1AE3042F74D0071608E /* instruction_table.def */ = {isa = PBXFileReference; lastKnownFileType = text; path = instruction_table.def; sourceTree = "<group>"; };
+		8217A1AF3042F74D0071608E /* instructions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = instructions.hpp; sourceTree = "<group>"; };
+		8217A1B03042F74D0071608E /* mos6502.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mos6502.hpp; sourceTree = "<group>"; };
+		8217A1B13042F74D0071608E /* operations.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = operations.hpp; sourceTree = "<group>"; };
+		8217A1B23042F74D0071608E /* registers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = registers.hpp; sourceTree = "<group>"; };
+		8217A1B33042F74D0071608E /* tracing.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = tracing.hpp; sourceTree = "<group>"; };
+		8217A1B43042F74D0071608E /* types.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = types.hpp; sourceTree = "<group>"; };
+		8217A1B53042F74D0071608E /* variants.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = variants.hpp; sourceTree = "<group>"; };
+		8217A1BA3042F7DC0071608E /* test_cpu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test_cpu.cpp; sourceTree = "<group>"; };
+		8217A1BD3042F88F0071608E /* 6502_functional_test.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = 6502_functional_test.bin; path = "Klaus-tests/bin_files/6502_functional_test.bin"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		000000000000000000000010 /* MyTool */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyTool;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		000000000000000130000000 /* Frameworks */ = {
@@ -30,7 +41,8 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				000000000000000000000010 /* MyTool */,
+				8217A1BB3042F7DC0071608E /* tests */,
+				8217A1B73042F74D0071608E /* include */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +53,43 @@
 				000000000000000000000120 /* MyTool */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8217A1B63042F74D0071608E /* mos6502 */ = {
+			isa = PBXGroup;
+			children = (
+				8217A1A93042F74D0071608E /* addressing.hpp */,
+				8217A1AA3042F74D0071608E /* bus.hpp */,
+				8217A1AB3042F74D0071608E /* cpu.hpp */,
+				8217A1AC3042F74D0071608E /* disassembler.hpp */,
+				8217A1AD3042F74D0071608E /* hooks.hpp */,
+				8217A1AE3042F74D0071608E /* instruction_table.def */,
+				8217A1AF3042F74D0071608E /* instructions.hpp */,
+				8217A1B03042F74D0071608E /* mos6502.hpp */,
+				8217A1B13042F74D0071608E /* operations.hpp */,
+				8217A1B23042F74D0071608E /* registers.hpp */,
+				8217A1B33042F74D0071608E /* tracing.hpp */,
+				8217A1B43042F74D0071608E /* types.hpp */,
+				8217A1B53042F74D0071608E /* variants.hpp */,
+			);
+			path = mos6502;
+			sourceTree = "<group>";
+		};
+		8217A1B73042F74D0071608E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8217A1B63042F74D0071608E /* mos6502 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8217A1BB3042F7DC0071608E /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				8217A1BD3042F88F0071608E /* 6502_functional_test.bin */,
+				8217A1BA3042F7DC0071608E /* test_cpu.cpp */,
+			);
+			path = tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -54,9 +103,6 @@
 				000000000000000130000000 /* Frameworks */,
 			);
 			buildRules = (
-			);
-			fileSystemSynchronizedGroups = (
-				000000000000000000000010 /* MyTool */,
 			);
 			name = MyTool;
 			productName = Tool;
@@ -78,7 +124,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 000000000000000010000000 /* Build configuration list for PBXProject "Untitled Project" */;
+			buildConfigurationList = 000000000000000010000000 /* Build configuration list for PBXProject "6502 Emulator" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -101,12 +147,13 @@
 		000000000000000120000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
+				8217A1BC3042F7DC0071608E /* test_cpu.cpp in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		000000000000000011000000 /* Debug configuration for PBXProject "Untitled Project" */ = {
+		000000000000000011000000 /* Debug configuration for PBXProject "6502 Emulator" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -176,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		000000000000000012000000 /* Release configuration for PBXProject "Untitled Project" */ = {
+		000000000000000012000000 /* Release configuration for PBXProject "6502 Emulator" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,39 +288,27 @@
 		000000000000000111000000 /* Debug configuration for PBXNativeTarget "MyTool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = include;
 			};
 			name = Debug;
 		};
 		000000000000000112000000 /* Release configuration for PBXNativeTarget "MyTool" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				MACOSX_DEPLOYMENT_TARGET = 26.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = include;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		000000000000000010000000 /* Build configuration list for PBXProject "Untitled Project" */ = {
+		000000000000000010000000 /* Build configuration list for PBXProject "6502 Emulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				000000000000000011000000 /* Debug configuration for PBXProject "Untitled Project" */,
-				000000000000000012000000 /* Release configuration for PBXProject "Untitled Project" */,
+				000000000000000011000000 /* Debug configuration for PBXProject "6502 Emulator" */,
+				000000000000000012000000 /* Release configuration for PBXProject "6502 Emulator" */,
 			);
 			defaultConfigurationName = Release;
 		};
