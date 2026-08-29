@@ -1469,6 +1469,7 @@
 		8217A1C43042FD890071608E /* Release configuration for PBXNativeTarget "Benchmarks" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = fast;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = include;
 			};
