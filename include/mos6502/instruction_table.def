@@ -1,0 +1,282 @@
+// mos6502 - instruction_table.def
+//
+// The single source of truth for the instruction set. Three consumers expand
+// this list - the dispatch switch, the disassembler, and the test suite's
+// reference tables - so they cannot drift apart.
+//
+//   X(opcode, mnemonic, operation, addressing mode, instruction shape)
+//
+// Undocumented opcodes are marked with a trailing comment. Cycle counts are
+// deliberately absent: they emerge from the accesses each shape performs.
+
+X(0x00, "BRK", BRK,   Implied,     SpecialInstr)
+X(0x01, "ORA", ORA,   IndirectX,   ReadInstr)
+X(0x02, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x03, "SLO", SLO,   IndirectX,   RmwInstr)       // undocumented
+X(0x04, "NOP", NOP_R, ZeroPage,    ReadInstr)      // undocumented
+X(0x05, "ORA", ORA,   ZeroPage,    ReadInstr)
+X(0x06, "ASL", ASL,   ZeroPage,    RmwInstr)
+X(0x07, "SLO", SLO,   ZeroPage,    RmwInstr)       // undocumented
+X(0x08, "PHP", PHP,   Implied,     ImpliedInstr)
+X(0x09, "ORA", ORA,   Immediate,   ReadInstr)
+X(0x0A, "ASL", ASL,   Accumulator, AccumInstr)
+X(0x0B, "ANC", ANC,   Immediate,   ReadInstr)      // undocumented
+X(0x0C, "NOP", NOP_R, Absolute,    ReadInstr)      // undocumented
+X(0x0D, "ORA", ORA,   Absolute,    ReadInstr)
+X(0x0E, "ASL", ASL,   Absolute,    RmwInstr)
+X(0x0F, "SLO", SLO,   Absolute,    RmwInstr)       // undocumented
+
+X(0x10, "BPL", BPL,   Relative,    BranchInstr)
+X(0x11, "ORA", ORA,   IndirectY,   ReadInstr)
+X(0x12, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x13, "SLO", SLO,   IndirectY,   RmwInstr)       // undocumented
+X(0x14, "NOP", NOP_R, ZeroPageX,   ReadInstr)      // undocumented
+X(0x15, "ORA", ORA,   ZeroPageX,   ReadInstr)
+X(0x16, "ASL", ASL,   ZeroPageX,   RmwInstr)
+X(0x17, "SLO", SLO,   ZeroPageX,   RmwInstr)       // undocumented
+X(0x18, "CLC", CLC,   Implied,     ImpliedInstr)
+X(0x19, "ORA", ORA,   AbsoluteY,   ReadInstr)
+X(0x1A, "NOP", NOP,   Implied,     ImpliedInstr)   // undocumented
+X(0x1B, "SLO", SLO,   AbsoluteY,   RmwInstr)       // undocumented
+X(0x1C, "NOP", NOP_R, AbsoluteX,   ReadInstr)      // undocumented
+X(0x1D, "ORA", ORA,   AbsoluteX,   ReadInstr)
+X(0x1E, "ASL", ASL,   AbsoluteX,   RmwInstr)
+X(0x1F, "SLO", SLO,   AbsoluteX,   RmwInstr)       // undocumented
+
+X(0x20, "JSR", JSR,   Absolute,    SpecialInstr)
+X(0x21, "AND", AND,   IndirectX,   ReadInstr)
+X(0x22, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x23, "RLA", RLA,   IndirectX,   RmwInstr)       // undocumented
+X(0x24, "BIT", BIT,   ZeroPage,    ReadInstr)
+X(0x25, "AND", AND,   ZeroPage,    ReadInstr)
+X(0x26, "ROL", ROL,   ZeroPage,    RmwInstr)
+X(0x27, "RLA", RLA,   ZeroPage,    RmwInstr)       // undocumented
+X(0x28, "PLP", PLP,   Implied,     ImpliedInstr)
+X(0x29, "AND", AND,   Immediate,   ReadInstr)
+X(0x2A, "ROL", ROL,   Accumulator, AccumInstr)
+X(0x2B, "ANC", ANC,   Immediate,   ReadInstr)      // undocumented
+X(0x2C, "BIT", BIT,   Absolute,    ReadInstr)
+X(0x2D, "AND", AND,   Absolute,    ReadInstr)
+X(0x2E, "ROL", ROL,   Absolute,    RmwInstr)
+X(0x2F, "RLA", RLA,   Absolute,    RmwInstr)       // undocumented
+
+X(0x30, "BMI", BMI,   Relative,    BranchInstr)
+X(0x31, "AND", AND,   IndirectY,   ReadInstr)
+X(0x32, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x33, "RLA", RLA,   IndirectY,   RmwInstr)       // undocumented
+X(0x34, "NOP", NOP_R, ZeroPageX,   ReadInstr)      // undocumented
+X(0x35, "AND", AND,   ZeroPageX,   ReadInstr)
+X(0x36, "ROL", ROL,   ZeroPageX,   RmwInstr)
+X(0x37, "RLA", RLA,   ZeroPageX,   RmwInstr)       // undocumented
+X(0x38, "SEC", SEC,   Implied,     ImpliedInstr)
+X(0x39, "AND", AND,   AbsoluteY,   ReadInstr)
+X(0x3A, "NOP", NOP,   Implied,     ImpliedInstr)   // undocumented
+X(0x3B, "RLA", RLA,   AbsoluteY,   RmwInstr)       // undocumented
+X(0x3C, "NOP", NOP_R, AbsoluteX,   ReadInstr)      // undocumented
+X(0x3D, "AND", AND,   AbsoluteX,   ReadInstr)
+X(0x3E, "ROL", ROL,   AbsoluteX,   RmwInstr)
+X(0x3F, "RLA", RLA,   AbsoluteX,   RmwInstr)       // undocumented
+
+X(0x40, "RTI", RTI,   Implied,     SpecialInstr)
+X(0x41, "EOR", EOR,   IndirectX,   ReadInstr)
+X(0x42, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x43, "SRE", SRE,   IndirectX,   RmwInstr)       // undocumented
+X(0x44, "NOP", NOP_R, ZeroPage,    ReadInstr)      // undocumented
+X(0x45, "EOR", EOR,   ZeroPage,    ReadInstr)
+X(0x46, "LSR", LSR,   ZeroPage,    RmwInstr)
+X(0x47, "SRE", SRE,   ZeroPage,    RmwInstr)       // undocumented
+X(0x48, "PHA", PHA,   Implied,     ImpliedInstr)
+X(0x49, "EOR", EOR,   Immediate,   ReadInstr)
+X(0x4A, "LSR", LSR,   Accumulator, AccumInstr)
+X(0x4B, "ALR", ALR,   Immediate,   ReadInstr)      // undocumented
+X(0x4C, "JMP", JMP_ABS, Absolute,  SpecialInstr)
+X(0x4D, "EOR", EOR,   Absolute,    ReadInstr)
+X(0x4E, "LSR", LSR,   Absolute,    RmwInstr)
+X(0x4F, "SRE", SRE,   Absolute,    RmwInstr)       // undocumented
+
+X(0x50, "BVC", BVC,   Relative,    BranchInstr)
+X(0x51, "EOR", EOR,   IndirectY,   ReadInstr)
+X(0x52, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x53, "SRE", SRE,   IndirectY,   RmwInstr)       // undocumented
+X(0x54, "NOP", NOP_R, ZeroPageX,   ReadInstr)      // undocumented
+X(0x55, "EOR", EOR,   ZeroPageX,   ReadInstr)
+X(0x56, "LSR", LSR,   ZeroPageX,   RmwInstr)
+X(0x57, "SRE", SRE,   ZeroPageX,   RmwInstr)       // undocumented
+X(0x58, "CLI", CLI,   Implied,     ImpliedInstr)
+X(0x59, "EOR", EOR,   AbsoluteY,   ReadInstr)
+X(0x5A, "NOP", NOP,   Implied,     ImpliedInstr)   // undocumented
+X(0x5B, "SRE", SRE,   AbsoluteY,   RmwInstr)       // undocumented
+X(0x5C, "NOP", NOP_R, AbsoluteX,   ReadInstr)      // undocumented
+X(0x5D, "EOR", EOR,   AbsoluteX,   ReadInstr)
+X(0x5E, "LSR", LSR,   AbsoluteX,   RmwInstr)
+X(0x5F, "SRE", SRE,   AbsoluteX,   RmwInstr)       // undocumented
+
+X(0x60, "RTS", RTS,   Implied,     SpecialInstr)
+X(0x61, "ADC", ADC,   IndirectX,   ReadInstr)
+X(0x62, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x63, "RRA", RRA,   IndirectX,   RmwInstr)       // undocumented
+X(0x64, "NOP", NOP_R, ZeroPage,    ReadInstr)      // undocumented
+X(0x65, "ADC", ADC,   ZeroPage,    ReadInstr)
+X(0x66, "ROR", ROR,   ZeroPage,    RmwInstr)
+X(0x67, "RRA", RRA,   ZeroPage,    RmwInstr)       // undocumented
+X(0x68, "PLA", PLA,   Implied,     ImpliedInstr)
+X(0x69, "ADC", ADC,   Immediate,   ReadInstr)
+X(0x6A, "ROR", ROR,   Accumulator, AccumInstr)
+X(0x6B, "ARR", ARR,   Immediate,   ReadInstr)      // undocumented
+X(0x6C, "JMP", JMP_IND, Indirect,  SpecialInstr)
+X(0x6D, "ADC", ADC,   Absolute,    ReadInstr)
+X(0x6E, "ROR", ROR,   Absolute,    RmwInstr)
+X(0x6F, "RRA", RRA,   Absolute,    RmwInstr)       // undocumented
+
+X(0x70, "BVS", BVS,   Relative,    BranchInstr)
+X(0x71, "ADC", ADC,   IndirectY,   ReadInstr)
+X(0x72, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x73, "RRA", RRA,   IndirectY,   RmwInstr)       // undocumented
+X(0x74, "NOP", NOP_R, ZeroPageX,   ReadInstr)      // undocumented
+X(0x75, "ADC", ADC,   ZeroPageX,   ReadInstr)
+X(0x76, "ROR", ROR,   ZeroPageX,   RmwInstr)
+X(0x77, "RRA", RRA,   ZeroPageX,   RmwInstr)       // undocumented
+X(0x78, "SEI", SEI,   Implied,     ImpliedInstr)
+X(0x79, "ADC", ADC,   AbsoluteY,   ReadInstr)
+X(0x7A, "NOP", NOP,   Implied,     ImpliedInstr)   // undocumented
+X(0x7B, "RRA", RRA,   AbsoluteY,   RmwInstr)       // undocumented
+X(0x7C, "NOP", NOP_R, AbsoluteX,   ReadInstr)      // undocumented
+X(0x7D, "ADC", ADC,   AbsoluteX,   ReadInstr)
+X(0x7E, "ROR", ROR,   AbsoluteX,   RmwInstr)
+X(0x7F, "RRA", RRA,   AbsoluteX,   RmwInstr)       // undocumented
+
+X(0x80, "NOP", NOP_R, Immediate,   ReadInstr)      // undocumented
+X(0x81, "STA", STA,   IndirectX,   WriteInstr)
+X(0x82, "NOP", NOP_R, Immediate,   ReadInstr)      // undocumented
+X(0x83, "SAX", SAX,   IndirectX,   WriteInstr)     // undocumented
+X(0x84, "STY", STY,   ZeroPage,    WriteInstr)
+X(0x85, "STA", STA,   ZeroPage,    WriteInstr)
+X(0x86, "STX", STX,   ZeroPage,    WriteInstr)
+X(0x87, "SAX", SAX,   ZeroPage,    WriteInstr)     // undocumented
+X(0x88, "DEY", DEY,   Implied,     ImpliedInstr)
+X(0x89, "NOP", NOP_R, Immediate,   ReadInstr)      // undocumented
+X(0x8A, "TXA", TXA,   Implied,     ImpliedInstr)
+X(0x8B, "ANE", ANE,   Immediate,   ReadInstr)      // undocumented, unstable
+X(0x8C, "STY", STY,   Absolute,    WriteInstr)
+X(0x8D, "STA", STA,   Absolute,    WriteInstr)
+X(0x8E, "STX", STX,   Absolute,    WriteInstr)
+X(0x8F, "SAX", SAX,   Absolute,    WriteInstr)     // undocumented
+
+X(0x90, "BCC", BCC,   Relative,    BranchInstr)
+X(0x91, "STA", STA,   IndirectY,   WriteInstr)
+X(0x92, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0x93, "SHA", SHA,   IndirectY,   UnstableStoreInstr)     // undocumented, unstable
+X(0x94, "STY", STY,   ZeroPageX,   WriteInstr)
+X(0x95, "STA", STA,   ZeroPageX,   WriteInstr)
+X(0x96, "STX", STX,   ZeroPageY,   WriteInstr)
+X(0x97, "SAX", SAX,   ZeroPageY,   WriteInstr)     // undocumented
+X(0x98, "TYA", TYA,   Implied,     ImpliedInstr)
+X(0x99, "STA", STA,   AbsoluteY,   WriteInstr)
+X(0x9A, "TXS", TXS,   Implied,     ImpliedInstr)
+X(0x9B, "TAS", TAS,   AbsoluteY,   UnstableStoreInstr)     // undocumented, unstable
+X(0x9C, "SHY", SHY,   AbsoluteX,   UnstableStoreInstr)     // undocumented, unstable
+X(0x9D, "STA", STA,   AbsoluteX,   WriteInstr)
+X(0x9E, "SHX", SHX,   AbsoluteY,   UnstableStoreInstr)     // undocumented, unstable
+X(0x9F, "SHA", SHA,   AbsoluteY,   UnstableStoreInstr)     // undocumented, unstable
+
+X(0xA0, "LDY", LDY,   Immediate,   ReadInstr)
+X(0xA1, "LDA", LDA,   IndirectX,   ReadInstr)
+X(0xA2, "LDX", LDX,   Immediate,   ReadInstr)
+X(0xA3, "LAX", LAX,   IndirectX,   ReadInstr)      // undocumented
+X(0xA4, "LDY", LDY,   ZeroPage,    ReadInstr)
+X(0xA5, "LDA", LDA,   ZeroPage,    ReadInstr)
+X(0xA6, "LDX", LDX,   ZeroPage,    ReadInstr)
+X(0xA7, "LAX", LAX,   ZeroPage,    ReadInstr)      // undocumented
+X(0xA8, "TAY", TAY,   Implied,     ImpliedInstr)
+X(0xA9, "LDA", LDA,   Immediate,   ReadInstr)
+X(0xAA, "TAX", TAX,   Implied,     ImpliedInstr)
+X(0xAB, "LXA", LXA,   Immediate,   ReadInstr)      // undocumented, unstable
+X(0xAC, "LDY", LDY,   Absolute,    ReadInstr)
+X(0xAD, "LDA", LDA,   Absolute,    ReadInstr)
+X(0xAE, "LDX", LDX,   Absolute,    ReadInstr)
+X(0xAF, "LAX", LAX,   Absolute,    ReadInstr)      // undocumented
+
+X(0xB0, "BCS", BCS,   Relative,    BranchInstr)
+X(0xB1, "LDA", LDA,   IndirectY,   ReadInstr)
+X(0xB2, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0xB3, "LAX", LAX,   IndirectY,   ReadInstr)      // undocumented
+X(0xB4, "LDY", LDY,   ZeroPageX,   ReadInstr)
+X(0xB5, "LDA", LDA,   ZeroPageX,   ReadInstr)
+X(0xB6, "LDX", LDX,   ZeroPageY,   ReadInstr)
+X(0xB7, "LAX", LAX,   ZeroPageY,   ReadInstr)      // undocumented
+X(0xB8, "CLV", CLV,   Implied,     ImpliedInstr)
+X(0xB9, "LDA", LDA,   AbsoluteY,   ReadInstr)
+X(0xBA, "TSX", TSX,   Implied,     ImpliedInstr)
+X(0xBB, "LAS", LAS,   AbsoluteY,   ReadInstr)      // undocumented
+X(0xBC, "LDY", LDY,   AbsoluteX,   ReadInstr)
+X(0xBD, "LDA", LDA,   AbsoluteX,   ReadInstr)
+X(0xBE, "LDX", LDX,   AbsoluteY,   ReadInstr)
+X(0xBF, "LAX", LAX,   AbsoluteY,   ReadInstr)      // undocumented
+
+X(0xC0, "CPY", CPY,   Immediate,   ReadInstr)
+X(0xC1, "CMP", CMP,   IndirectX,   ReadInstr)
+X(0xC2, "NOP", NOP_R, Immediate,   ReadInstr)      // undocumented
+X(0xC3, "DCP", DCP,   IndirectX,   RmwInstr)       // undocumented
+X(0xC4, "CPY", CPY,   ZeroPage,    ReadInstr)
+X(0xC5, "CMP", CMP,   ZeroPage,    ReadInstr)
+X(0xC6, "DEC", DEC,   ZeroPage,    RmwInstr)
+X(0xC7, "DCP", DCP,   ZeroPage,    RmwInstr)       // undocumented
+X(0xC8, "INY", INY,   Implied,     ImpliedInstr)
+X(0xC9, "CMP", CMP,   Immediate,   ReadInstr)
+X(0xCA, "DEX", DEX,   Implied,     ImpliedInstr)
+X(0xCB, "SBX", SBX,   Immediate,   ReadInstr)      // undocumented
+X(0xCC, "CPY", CPY,   Absolute,    ReadInstr)
+X(0xCD, "CMP", CMP,   Absolute,    ReadInstr)
+X(0xCE, "DEC", DEC,   Absolute,    RmwInstr)
+X(0xCF, "DCP", DCP,   Absolute,    RmwInstr)       // undocumented
+
+X(0xD0, "BNE", BNE,   Relative,    BranchInstr)
+X(0xD1, "CMP", CMP,   IndirectY,   ReadInstr)
+X(0xD2, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0xD3, "DCP", DCP,   IndirectY,   RmwInstr)       // undocumented
+X(0xD4, "NOP", NOP_R, ZeroPageX,   ReadInstr)      // undocumented
+X(0xD5, "CMP", CMP,   ZeroPageX,   ReadInstr)
+X(0xD6, "DEC", DEC,   ZeroPageX,   RmwInstr)
+X(0xD7, "DCP", DCP,   ZeroPageX,   RmwInstr)       // undocumented
+X(0xD8, "CLD", CLD,   Implied,     ImpliedInstr)
+X(0xD9, "CMP", CMP,   AbsoluteY,   ReadInstr)
+X(0xDA, "NOP", NOP,   Implied,     ImpliedInstr)   // undocumented
+X(0xDB, "DCP", DCP,   AbsoluteY,   RmwInstr)       // undocumented
+X(0xDC, "NOP", NOP_R, AbsoluteX,   ReadInstr)      // undocumented
+X(0xDD, "CMP", CMP,   AbsoluteX,   ReadInstr)
+X(0xDE, "DEC", DEC,   AbsoluteX,   RmwInstr)
+X(0xDF, "DCP", DCP,   AbsoluteX,   RmwInstr)       // undocumented
+
+X(0xE0, "CPX", CPX,   Immediate,   ReadInstr)
+X(0xE1, "SBC", SBC,   IndirectX,   ReadInstr)
+X(0xE2, "NOP", NOP_R, Immediate,   ReadInstr)      // undocumented
+X(0xE3, "ISC", ISC,   IndirectX,   RmwInstr)       // undocumented
+X(0xE4, "CPX", CPX,   ZeroPage,    ReadInstr)
+X(0xE5, "SBC", SBC,   ZeroPage,    ReadInstr)
+X(0xE6, "INC", INC,   ZeroPage,    RmwInstr)
+X(0xE7, "ISC", ISC,   ZeroPage,    RmwInstr)       // undocumented
+X(0xE8, "INX", INX,   Implied,     ImpliedInstr)
+X(0xE9, "SBC", SBC,   Immediate,   ReadInstr)
+X(0xEA, "NOP", NOP,   Implied,     ImpliedInstr)
+X(0xEB, "SBC", SBC,   Immediate,   ReadInstr)      // undocumented alias of $E9
+X(0xEC, "CPX", CPX,   Absolute,    ReadInstr)
+X(0xED, "SBC", SBC,   Absolute,    ReadInstr)
+X(0xEE, "INC", INC,   Absolute,    RmwInstr)
+X(0xEF, "ISC", ISC,   Absolute,    RmwInstr)       // undocumented
+
+X(0xF0, "BEQ", BEQ,   Relative,    BranchInstr)
+X(0xF1, "SBC", SBC,   IndirectY,   ReadInstr)
+X(0xF2, "JAM", JAM,   Implied,     SpecialInstr)   // undocumented
+X(0xF3, "ISC", ISC,   IndirectY,   RmwInstr)       // undocumented
+X(0xF4, "NOP", NOP_R, ZeroPageX,   ReadInstr)      // undocumented
+X(0xF5, "SBC", SBC,   ZeroPageX,   ReadInstr)
+X(0xF6, "INC", INC,   ZeroPageX,   RmwInstr)
+X(0xF7, "ISC", ISC,   ZeroPageX,   RmwInstr)       // undocumented
+X(0xF8, "SED", SED,   Implied,     ImpliedInstr)
+X(0xF9, "SBC", SBC,   AbsoluteY,   ReadInstr)
+X(0xFA, "NOP", NOP,   Implied,     ImpliedInstr)   // undocumented
+X(0xFB, "ISC", ISC,   AbsoluteY,   RmwInstr)       // undocumented
+X(0xFC, "NOP", NOP_R, AbsoluteX,   ReadInstr)      // undocumented
+X(0xFD, "SBC", SBC,   AbsoluteX,   ReadInstr)
+X(0xFE, "INC", INC,   AbsoluteX,   RmwInstr)
+X(0xFF, "ISC", ISC,   AbsoluteX,   RmwInstr)       // undocumented
